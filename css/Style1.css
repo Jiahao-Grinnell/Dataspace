@@ -51,6 +51,9 @@ body {
   font-style: normal;
   cursor: pointer;
 }
+.dropbtn:hover{
+	color: rgba(65,143,222,1.00);
+}
 a:hover{color:rgba(128,128,128,1.00);}
 
 #junkdrawer a{text-decoration: none}
