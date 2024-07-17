@@ -5,8 +5,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>site</title>
-<link href="css/Style1.css" rel="stylesheet" type="text/css">
-<link rel="icon" type="image/x-icon" href="images/MapLogo.ico">
+<link href="../../Downloads/brexit/css/Style1.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/x-icon" href="../../Downloads/brexit/images/MapLogo.ico">
 </head>
 	
 		<div id="nav-wrapper"> 
@@ -14,7 +14,7 @@
     Header starts here. It contains Logo and 7 navigation links. 
     ****************************************************************************-->
    		<nav>
-	    	<a href = "https://www.grinnell.edu"> <img  src="images/MapLogoBg.png" alt="logo" width = "50" height = "40" style = "padding: 16px"> </a> 
+	    	<a href = "https://www.grinnell.edu"> <img  src="../../Downloads/brexit/images/MapLogoBg.png" alt="logo" width = "50" height = "40" style = "padding: 16px"> </a> 
 	   		<a style = "color:white;font-size:25px; padding-top: 16px; padding-right: 600px; font-family:'Oswald'"> Dataspace by DASIL </a>
 	   		<div class = "dropdown" style = "float:left;padding-top:15px;padding-right:14px">
 	   			<button class = "dropbtn"> Stories </button>
@@ -43,11 +43,9 @@
 	</nav>
     </div>
 <body>
-	
-	
 	<div id = "mainwrapper" style = "width:75rem">
 		<div class="blackCover"></div>
-	 	<img src = "images/greenhouseLong.png" style = "height:200px; width:100%;display:block;padding-top:100px" alt = "police">
+	 	<img src = "../../Downloads/brexit/images/greenhouseLong.png" style = "height:200px; width:100%;display:block;padding-top:100px" alt = "police">
 		<div class="container">
         	<div class="overlay" style = "padding-top:150%;padding-left:200%;font-weight:bold;font-size:60px;padding-top:10px; margin-top:-100px;position:absolute">GREENHOUSE</div>
    		</div>
@@ -57,9 +55,11 @@
 			<div class="partsButton" href="https://www.stat2games.sites.grinnell.edu/games/greenhouse3.html">MODULE 3</div>
 		</div>
 		<div class="flex-container">
-			<div class="partsButton" href="https://stat2games.sites.grinnell.edu/Greenhouse%20Game%20Instructions.pdf">INSTRUCTIONS</div>
-			<div class="partsButton" href="https://stat2games.sites.grinnell.edu/data/greenhouse/greenhouse.php">GAME DATA</div>
-			<div class="partsButton" >HANDOUTS</div>
+			<div class="partsButton" style="width:250px" href="https://stat2games.sites.grinnell.edu/Greenhouse%20Game%20Instructions.pdf">INSTRUCTIONS</div>
+			<div class="partsButton" style="width:250px" href="https://shiny.grinnell.edu/Greenhouse_Visualizations/">VISUALISATION</div>
+			<div class="partsButton" style="width:250px" href="https://stat2games.sites.grinnell.edu/data/greenhouse/greenhouse.php">GAME DATA</div>
+			<div class="partsButton" style="width:250px">STUDENT HANDOUT</div>
+			<div class="partsButton" style="width:250px">TEACHER HANDOUT</div>
 		</div>
 		<article class = "TitleInfo" style = "width:100%;padding-top:50px">
 			<hr>
@@ -105,9 +105,9 @@
 		</section>
 	</div>
 	
-	<div id="third-wrapper">
-		<div class="partsButton" style="width:60%;margin-left:20%">Part B: Collecting Data</div>
-		<h4 >The Greenhouse Game can also be an opportunity to consider a variety of research questions, such as what combination of growing conditions would optimize crop yields or profits? Most real-world research questions are much bigger than the resources available to study them, and researchers must limit the scope of their efforts. Similarly, we will start with a simplified question. We will <strong>estimate the corn yield based on the amount of water</strong>.</h4>	 
+	<div id="third-wrapper" >
+		<div class="partsButton" style="width:60%">Part B: Collecting Data</div>
+		<h4>The Greenhouse Game can also be an opportunity to consider a variety of research questions, such as what combination of growing conditions would optimize crop yields or profits? Most real-world research questions are much bigger than the resources available to study them, and researchers must limit the scope of their efforts. Similarly, we will start with a simplified question. We will <strong>estimate the corn yield based on the amount of water</strong>.</h4>	 
 		<h4>Use the Greenhouse game (below) to collect data on corn yield based on the amount of water:</h4>
 		<li>Provide a <strong>Player ID</strong> (see Figure 1). You may use any name you like: this name will be on the internet, so do not use a name that will easily identify you.</li>
 		<li>Provide a <strong>Group ID</strong>. If you are playing this game for a course, use the exact Group ID provided by your instructor, which is the same for every person in the class.</li>
@@ -115,27 +115,10 @@
 		<li>On the next screen, note the prices of corn ($30 for each plot) and water ($1 for every inch of water added to each plot).</li>
 		<li>Select <strong>corn</strong>; enter the six amounts of water as you see in Figure 2; test every combination 5 times; and then select <strong>Randomized Play</strong>, which assigns each treatment (crop type and water amount) to a randomly selected plot.</li>
 	</div>
-	
-
-	<section id = "leftContent" style = "width:25%;float:left;height:2000px;text-align:center;line-height: 1.7">
-	<div style = "width:80%;float:left;color:Black;font-size: 18px; text-align: left; margin-left:5%">
-		<p> <strong>Figure 1:</strong> Settings to start Greenhouse Game for Part 1</p>
-		<img src="images/greenhousefig1.png" alt="settings to start game" width="100%" >
-		
-		<p> <strong>Figure 2:</strong> Settings to generate data for Part 1</p>
-	  <img src="images/greenhousefig2.png" alt="settings to generate data" width="100%" >
-		
-	</div>
-		
-		
+	<section style="width:100%; height:auto;">
+			<iframe src="https://www.stat2games.sites.grinnell.edu/games/greenhouse.html" style= "width:100%; height: 700px; border:none"></iframe>
 	</section>
-    	
-	  <section style="width:100%; height:auto;margin-left:25%">
-			<iframe src="https://www.stat2games.sites.grinnell.edu/games/greenhouse.html" style= "margin-left:-15%;width:100%; height: 700px; border:none"></iframe>
-		</section>
-	
-    	
-	<section style="width:60%;margin-left:20%">
+	<section>
 		<h4><strong>NOTE</strong>: At this point, do not worry about winning or profits; just carefully follow the instructions below to collect data.</h4>
 		<h4><strong>NOTE</strong>: If you are unable to play the game, either try a different browser or go to the game website directly 	<a href="https://www.stat2games.sites.grinnell.edu/games/greenhouse.html">here.</a></h4>
 		<hr>
@@ -147,13 +130,13 @@
 		<br><br><br>
 	</section>
 	<div id="fourth-wrapper">
-		<div class="partsButton" style="width:700px;margin-left:20%">Part C: Exploring Example Data</div>
+		<div class="partsButton" style="width:700px">Part C: Exploring Example Data</div>
 		<h4>Before we analyze the data your class has collected, we will look at an example dataset from someone that already completed this activity. To begin, set Greenhouse App1 to <strong>Settings A</strong> (at left) and then complete the <strong>Creating Graphs</strong> questions below.</h4>
 	</div>
 	
 	
 <div id = "SecondSectionwrapper" style = "width:100%;height:auto">
-	<div style = "width:30%;float:left;color:Black;font-size: 12px; margin-left: -25%">
+	<div style = "width:30%;float:left;color:Black;font-size: 12px; padding-left: 2%">
 			<div>		
 				<h4 style="margin-left:10%;font-size:14px;margin-bottom:0px"><strong>Settings A</strong></h4> 
 		
@@ -175,14 +158,15 @@
 		<h4 style="margin-left:10%;width:50%;font-size:14px"><strong>Figure 3: </strong>Interpreting the Output</h4>
 		<img src = "images/greenhouse1b.png" alt = "interpreting the output" style = "width:80%; display:inline-block;">
 		<h4 style = "width:60%;float:left;color:Black;font-size: 12px; margin-left:10%">Whenever you select a model in the application on the right, you will also see statistical output. In the output, you can find key summary statistics related to the model you have selected.</h4>		
-		<br><br><br><br><br><br><br><br><br>
-		<h4 style="margin-left:10%;font-size:14px;margin-right:15%"><strong>Instructors Note: </strong> Go to <a href="references.html">faculty resources</a> to access student data</h4>
+				
+		<br><br>
+				
+				<h4 style="margin-left:10%;font-size:14px"><strong>Instructors Note: </strong> Go to <a href="references.html">faculty resources</a> to access student data</h4>
 			</div>	
 	</div>
 		
 	<div style = "width:60%;padding-left:1.5%;float:left">	
 	  <iframe src = "https://shiny.grinnell.edu/dataspace/greenhouse2/" width="105%" height="1000px" style = "border:none"></iframe>
-		
   </div>
 		
 	<div id = "mainwrapper" style = "width:75%; height: auto">
