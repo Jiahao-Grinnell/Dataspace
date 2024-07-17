@@ -332,13 +332,13 @@ a {color: black}
 #second-wrapper h4, #second-wrapper li{
 	font-weight: normal;
 	font-size:20px;
-	margin: 10px 300px;
+	margin: 10px 30%;
 }
 
 #third-wrapper h4, #third-wrapper li, #fourth-wrapper h4, #fourth-wrapper li{
 	font-weight: normal;
 	font-size:20px;
-	margin: 10px 300px;
+	margin: 10px 30%;
 }
 
 
@@ -622,6 +622,7 @@ footer {
 	width: 96%;
 }
 }
+
 
 
 
