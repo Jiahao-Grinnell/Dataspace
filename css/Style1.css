@@ -35,6 +35,10 @@
 	padding-bottom: 12px;
 	color: rgba(146,146,146,1.00);
 }
+#container{
+	transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 body {
 	background-color: white;
 	background-size: auto;
