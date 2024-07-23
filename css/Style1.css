@@ -333,7 +333,7 @@ a {color: black}
     align-items: center;    /* Center vertically */
 	margin: 0 auto;
 }
-#second-wrapper h4, #second-wrapper li{
+#second-wrapper h4, #second-wrapper li, #SecondSectionwrapper h4, #SecondSectionwrapper li{
 	font-weight: normal;
 	font-size:20px;
 	margin: 10px 30%;
