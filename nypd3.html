@@ -4,7 +4,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dataspace|NYPD|Mod 1</title>
+<title>Dataspace|NYPD|Mod 3</title>
 <link href="css/Style1.css" rel="stylesheet" type="text/css">
 <link rel="icon" type="image/x-icon" href="images/MapLogo.ico">
 </head>
@@ -59,9 +59,9 @@
         	<div class="overlay" style = "padding-top:150%;padding-left:200%;font-weight:bold;font-size:60px;padding-top:10px; margin-top:-100px;position:absolute">NYPD</div>
    		</div>
 		<div class="flex-container">
-			<div class="partsButton" href="nypd1.html" style="background:#418fde">MODULE 1</div>
+			<div class="partsButton" href="nypd1.html">MODULE 1</div>
 			<div class="partsButton" href="nypd2.html">MODULE 2</div>
-			<div class="partsButton" href="nypd3.html">MODULE 3</div>
+			<div class="partsButton" href="nypd3.html" style="background:#418fde">MODULE 3</div>
 		</div>
 		<div class="flex-container">
 			<div class="partsButton" href="https://stat2games.sites.grinnell.edu/Greenhouse%20Game%20Instructions.pdf">R TUTORIAL</div>
@@ -81,72 +81,50 @@
 	<section id = "rightContent">
 		<aside id="rightcontent" style = "width:100%">		
 			<br><br><br><br><br>
-			<h3> <strong style = "font-size: 20px; padding-right: 10px; margin-left:-20%">Fun Fact:</strong><img src="images/FunFact.png" width="38" height="28" alt="fun fact icon"/></h3>
-			<h4 style="width:100%;font-size:16px;margin-left:-3%;font-weight:normal">Is there evidence of racial discrimination in the NYPD based on the stops and arrests it makes?</h4> </aside>
+			<h3> <strong style = "font-size: 20px; padding-right: 10px; margin-left:-20%">Focus Question:</strong><img src="images/FocusQuestion.jpg" width="38" height="28" alt="fun fact icon"/></h3>
+			<h4 style="width:100%;font-size:16px;margin-left:-3%;font-weight:normal">Does the racial disparity among precints fully account for the racial disparity in arrests?</h4> </aside>
 			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			<h3> <strong style = "font-size: 20px; padding-right: 10px; margin-left:-20%">Key Idea:</strong><img src="images/KeyIdea.jpg" width="38" height="28" alt="key idea icon"/></h3>
-			<h4 style="width:100%;font-size:16px;margin-left:-3%;font-weight:normal">Percentages can be mathematically accurate, but lead to very different conclusions.</h4> </aside>
+			<h4 style="width:100%;font-size:16px;margin-left:-3%;font-weight:normal">Visualizing data through maps can allow us to find meaningful patterns in data.</h4> </aside>
 	</section>
 	
 	<div id="second-wrapper">
-			<div class="partsButton" style="width:50%;margin-left:25%">Part 1A: Introduction</div>
+			<div class="partsButton" style="width:50%;margin-left:25%">Part 3A: Introduction</div>
 			<br>
-			<h4>Ronnie is headed home after a day of school. He’s got a spring in his step as he makes his way through his Brooklyn neighborhood. As he reaches for his keys, he gets a sinking feeling, realizing he left them on the kitchen table. He shuffles past the bushes and cups his hands to look into the first-floor window, checking to see if his younger sister is home yet. As he’s fumbling with the front door, two men come up and gruffly ask him what he’s doing.</h4>
-			<h4>They flash their badges and tell him they’re going to search him, based on his suspicious behavior. Tongue-tied, Ronnie tries to explain the situation as one man starts rifling through his backpack, and the other one pats him down. Even though he didn’t do anything wrong, his heart is pounding, and his palms start to sweat.</h4>
-			<h4>After several minutes, the cops conclude that Ronnie’s story checks out, and they head down the street, leaving Ronnie to wonder just how much of that interaction had to do with the color of his skin.</h4>
-			<h4>The New York City stop-and-frisk policy allowed police to stop and search individuals when any officer had "reasonable suspicion" — a standard that is lower than the "probable cause" needed to justify an arrest. The logic was that when nonviolent crime rates are reduced, <a href="https://www.nbcnews.com/id/wbna33230464">violent crime rates</a> go down as well. <a href="https://www.cantonrep.com/story/news/2009/10/24/police-frisking-policy-credited-with/42545329007/">NYPD Commissioner Raymond Kelly stood by the policy</a>, stating that “This is a proven law enforcement tactic to fight and deter crime, one that is authorized by criminal procedure law.”</h4>
-			<h4>Civil rights activists, such as the <a href="http://www.stat.columbia.edu/~gelman/research/published/frisk9.pdf">Center for Constitutional Rights</a>, argued that this stop-and-frisk policy led to the New York City Police Department (NYPD) unfairly targeting people of color. Recent New York leaders such as Mayor Bill de Blasio made changes to that policy, decreasing the frequency of stop-and-frisks happening on a daily basis. Does the data provide evidence that Black and Latinx people are policed differently than white people?</h4>
-			<br>
-			<img src="images/nypdStock1.jpg" alt="police department" style="width:40%;margin-left:30%">
+			<h4>In the 2013 U.S. District Court case, the NYPD defended its stop and frisk practices, saying that since crimes mostly occur in Black and Latino neighborhoods, it is understandable that more <a href="https://www2.nycbar.org/pdf/report/uploads/20072495-StopFriskReport.pdf">Black people would be found suspicious of crimes</a>.</h4>
+			<h4>Let’s look at the data to evaluate the NYPD’s claim. If this claim were the only reason for the disparity in stops, we might expect people of color to have a higher likelihood of being stopped in Black and Latino neighborhoods. In Figure 3 below, we can compare the police stops to the racial distribution in each precinct.</h4>
+			<img src="images/nypdFigures3.jpg" alt="data figures" style="width:40%;margin-left:30%">
 			<br><br><br><br>
-		
-			<div class="partsButton" style="width:50%;margin-left:25%">Part 1B: What Does The Data Say?</div>
-			<h4>The data we are working with comes from the <a href="https://www.nyc.gov/site/nypd/stats/reports-analysis/stopfrisk.page">New York City Police Department</a>. Every time a person is stopped or questioned by the NYPD, an officer is expected to fill out a police report that records the details of the interaction. Since 2002, there were more than <a href="https://www.nyclu.org/data/stop-and-frisk-data">five million stop-and-frisk reports</a>. However, large amounts of data don’t necessarily lead to clear conclusions. Let’s take a look at just how easy it is to draw incorrect conclusions from large and messy data sets.</h4>
-			<h4>The graphs in Figure 1 below visualize the same data from these reports, but in two different ways.</h4>
-		<br><br>
-	</div>
-	
-
-	<section id = "leftContent" style = "width:25%;float:left;height:2000px;text-align:center;line-height: 1.7">
-		<div style = "width:80%;float:left;color:Black;font-size: 16px; text-align: left; margin-left:5%">
-		<p> <strong>Figure 1A</strong></p>
-		<p>Shows the <strong>total number</strong> of arrests broken down by race of the suspect. This graph clearly tells the story that people of color are much more likely to be arrested than white people. </p>
-		</div>
-		<div style = "width:80%;float:left;color:Black;font-size: 16px; text-align: left; margin-left:5%">
-		<br>
-		<p> <strong>Figure 1B</strong></p>
-		<p>Displays the <strong>percentage of people stopped</strong>, who were arrested for each race. When we focus only on people who have already been stopped, there is no longer a clear racial disparity in the percentage of those people who are then arrested; (number of people arrested)/(number of people stopped) for each race is similar.</p>
-		</div>
-	</section>
-
-	<div id="third-wrapper">
-		<img src="images/nypdFigures.png" alt="Data figures" style="width:40%;margin-left:5%">
-		<br><br>
-		<h4>By considering Figures 1A and 1B, we see an example of how two people could reasonably tell two different stories depending on the way they summarize the data.</h4>
-		<h4>Whenever we are shown a percentage, we should always ask the question, “Percentage of what?” From Figure 1A, it appears that about 50% of all arrests made in New York under the stop-and-frisk policy involve a Black person being arrested. This is consistent with previous research that found that from January 1998 through March 1999, Black and Hispanic people represented 51% and 33% of the individuals stopped by the NYPD, even though only 26% and 24% of the population of New York City is Black or Hispanic, respectively.5 Figure 1B answers a different question for each race: given that a person has been stopped, what percentage of those stops result in the person being arrested? The core issue is that the values chosen can be mathematically accurate but lead to very different conclusions.</h4>
-		<br><br>
+			
+			<div class="partsButton" style="width:50%;margin-left:25%">Part 2B: What Does The Data Say?</div>
+			<h4>Figure 2 shows the number of arrests by race over time. There is a substantial decrease in the number of stop and frisk searches being conducted by NYPD after 2013.</h4>
+			<h4>One could look at these graphs and conclude that racial profiling—at least with stop and frisk procedures, has largely been eradicated. However, before making a conclusion, we will first look at the data carefully using the interactive visualization below.</h4>
+			<br><br>
+			<br><br><br><br>
 	</div>
 	
 	<div id = "SecondSectionwrapper" style = "width:100%;height:auto">
-		<div class="partsButton" style="width:50%;margin-left:25%">Part 1C: Explore The Data</div> 
-		<h4>It’s one thing to study a graph, but you can really understand the nuance and complexity of the data when you manipulate it yourself! See if you can use the NYPD Bar Chart App to recreate Figure 1A and Figure 1B on your own. Then modify the graph to answer the questions below.</h4>
-		<div style = "width:30%;float:left;color:Black;font-size: 14px; margin-left: -25%">
+		<div class="partsButton" style="width:50%;margin-left:25%">Part 2C: Explore The Data</div> 
+		<h4>Use the app below to make Figure 2 on your own. Then modify the graph to answer the questions.</h4>
+		<div style = "width:25%;float:left;color:Black;font-size: 14px;">
 		<br><br><br><br>
 		<p style="padding-left:0px; font-size:14px; margin-left: 30px">To make a graph that looks like Figure 1A, select:</p>
-        <li style="padding-left:0px; font-size:14px; margin-left: 30px"><a>Y-axis variable:&nbsp; &nbsp;<em><strong>Arrested</strong></em></a></li>
+        <li style="padding-left:0px; font-size:14px; margin-left: 30px"><a>Y-axis variable:&nbsp; &nbsp;<em><strong>Stopped</strong></em></a></li>
 		<li style="padding-left:0px; font-size:14px; margin-left: 30px"><a>X-axis variable:&nbsp; &nbsp;<em><strong>Race</strong></em></a></li>
 		<li style="padding-left:0px; font-size:14px; margin-left: 30px"><a>X-axis measurement:&nbsp; &nbsp;<em><strong>Counts</strong></em></a></li>
-		<li style="padding-left:0px; font-size:14px; margin-left: 30px"><a>Choose years:&nbsp; &nbsp;<em><strong>(2006-2018)</strong></em></a></li>
-		<li style="padding-left:0px; font-size:14px; margin-left: 30px"><a>Facet by:&nbsp; &nbsp;<em><strong>None</strong></em></a></li>
+		<li style="padding-left:0px; font-size:14px; margin-left: 30px"><a>Choose years:&nbsp; &nbsp;<em><strong>(2009-2016)</strong></em></a></li>
+		<li style="padding-left:0px; font-size:14px; margin-left: 30px"><a>Facet by:&nbsp; &nbsp;<em><strong>Year</strong></em></a></li>
 		<li style="padding-left:0px; font-size:14px; margin-left: 30px"><a>Color by:&nbsp; &nbsp;<em><strong>Race</strong></em></a></li>
+		<h4 style="margin-left:10%;margin-right:10%;font-size:14px"><strong>To better evaulate more recent patterns in racial disparities of the NYPD stops, change "Choose all years" to (2014-2020)</h4>
+		<br><br><br><br>
 		<h4 style="margin-left:10%;margin-right:10%;font-size:14px"><strong>Instructors Note: </strong> Go to <a href="references.html">faculty resources</a> to access student data</h4>
 		</div>
-	</div>  
 
-	<div style = "width:60%;padding-left:1.5%;float:left">	
-	  <iframe src = "https://shiny.grinnell.edu/NYPD_BarCharts/" width="105%" height="1000px" style = "border:none"></iframe>
-  </div>
-		
+	<div style = "width:70%;float:right;margin-left:-250px">	
+		<br><br>
+	  <iframe src = "https://shiny.grinnell.edu/NYPD_BarCharts/" width="100%" height="1000px" style = "border:none"></iframe>
+ 	 </div>
+	</div>  
 	<div id = "mainwrapper" style = "width:75%; height: auto">
 		<section id = "mainContent" style = "line-height:1.65;width:95%;height:auto;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000">
 			<iframe src =  "https://www.stat2games.sites.grinnell.edu/dataspaceForms/nypd1.php" width = "100%" height = "1000px" style = "border:none;padding-right:15px;padding-bottom: 1px"></iframe>
@@ -190,13 +168,12 @@
            	<h4>4. In each report, a suspect is identified by the police as male, female, or unknown. Are there any clear patterns related to the gender of the suspect? Assuming a male was stopped, is he more likely to be arrested than a female? Do these patterns hold true across races? (Hint: try faceting by race.)</h4>
 			<h4>5. Which crime type tends to have the most arrests each year?</h4>
 			<h4>6. Develop your own question that could be answered with the above NYPD Bar Chart app. Write a one paragraph answer to your question.</h4>
-			<ol>
-				<li>Assume your audience already understands the source and context of the data.</li>
-				<li>Include one or two graphs (cut and pasted from the app above).</li>
-				<li>Clearly state your question, describe the variables in the graph(s), interpret your graph(s), and discuss what conclusions you are able to draw from these graphs.</li>
-			</ol>
-        <h4>References</h4>
-        <p>Shannon, Joel, Feb 2019, Adorable animals across the nation are making Super Bowl predictions, USA Today. https://www.usatoday.com/story/news/nation/2019/02/03/animals-predict-super-bowl-outcome/2756507002/</p>
+				<li style="font-weight:normal">Assume your audience already understands the source and context of the data.</li>
+				<li style="font-weight:normal">Include one or two graphs (cut and pasted from the app above).</li>
+				<li style="font-weight:normal">Clearly state your question, describe the variables in the graph(s), interpret your graph(s), and discuss what conclusions you are able to draw from these graphs.</li>
+			<br>
+        <h4><strong>References</strong></h4>
+        <p style="font-weight:normal">Shannon, Joel, Feb 2019, Adorable animals across the nation are making Super Bowl predictions, USA Today. https://www.usatoday.com/story/news/nation/2019/02/03/animals-predict-super-bowl-outcome/2756507002/</p>
 		</section>
 	</div>
 
