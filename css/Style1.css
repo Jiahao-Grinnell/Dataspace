@@ -161,11 +161,17 @@ a {color: black}
 
 .besides-container {
     position: relative;
-    display: inline-block;
-    vertical-align: top;
+    display: block;
+    horizontal-align: top;
     width: 300px; /* Adjust as needed */
-    margin-right:0px; /* Space between containers */
 }
+
+#picture :hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
 
 .besides-image {
     display: block;
