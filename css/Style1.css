@@ -326,8 +326,14 @@ a {color: black}
 	margin: 0 auto;
 }
 
+.flex-container a{
+	text-decoration:none;
+	color: white;
+}
+
 .flex-container .partsButton:hover{
 	background: #418fde;
+
 }
 
 .iframe{
@@ -365,6 +371,9 @@ tr:nth-child(even) {
   background-color: #D6EEEE;
 }
 
+#link{
+	color:gray;
+}
 #second-wrapper h4, #second-wrapper li, #SecondSectionwrapper h4, #SecondSectionwrapper li{
 	font-weight: normal;
 	font-size:20px;
