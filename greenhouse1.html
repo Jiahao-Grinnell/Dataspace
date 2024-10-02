@@ -16,7 +16,8 @@
    		<nav>
 	    	<a href = "https://www.grinnell.edu"> <img  src="images/MapLogoBg.png" alt="logo" width = "50" height = "40" style = "padding: 16px"> </a> 
 	   		<a style = "color:white;font-size:25px; padding-top: 16px; padding-right: 600px; font-family:'Oswald'" href="index.html"> Dataspace by DASIL </a>
-	   <div class = "dropdown" style = "float:left;padding-top:15px;padding-right:14px">
+		<div class = "dropdownContainer">
+	   <div class = "dropdown">
 	   		<button class = "dropbtn" href="stories.html"> Stories </button>
 		   		<div class = "dropdown-content">
 					<div class = "dropdown" style="float:left; padding-top:15px; padding-right:14px">
@@ -28,7 +29,7 @@
                     </div>
 	   			</div>
 	   </div>
-			<div class = "dropdown" style = "float:left;padding-top:15px;padding-right:14px" >
+			<div class = "dropdown">
 	   			<button class = "dropbtn" > Games </button>
 		   		<div class = "dropdown-content">
 					<div class = "dropdown" style="float:left; padding-top:15px; padding-right:14px">
@@ -40,7 +41,7 @@
                     </div>
 	   			</div>
 	   		</div>
-	   <div class = "dropdown" style = "float:left;padding-top:15px" >
+	   <div class = "dropdown">
 	   		<button class = "dropbtn" > Resources </button>
 	   			<div class = "dropdown-content">
 		   			<a href = "../../Downloads/brexit/racer1.html">Datasets</a>
@@ -49,6 +50,7 @@
 		  			<a href = "../../Downloads/brexit/statsgrounded1.html">Faculty Guide</a>
 		   		</div>
 	   </div>
+	</div>
 	</nav>
     </div>
 <body>
@@ -56,19 +58,19 @@
 	
 	<div id = "mainwrapper" style = "width:75rem">
 		<div class="blackCover"></div>
-	 	<img src = "images/greenhouseLong.png" style = "height:200px; width:100%;display:block;padding-top:100px" alt = "police">
+	 	<img src = "images/greenhouseLong.png" class="topImage">
 		<div class="container">
         	<div class="overlay" style = "padding-top:150%;padding-left:200%;font-weight:bold;font-size:60px;padding-top:10px; margin-top:-100px;position:absolute">GREENHOUSE</div>
    		</div>
 		<div class="flex-container">
-			<div class="partsButton" href="greenhouse1.html" style="background:#418fde">MODULE 1</div>
-			<div class="partsButton" href="greenhouse2.html">MODULE 2</div>
-			<div class="partsButton" href="greenhouse3.html">MODULE 3</div>
+			<a href="greenhouse1.html"> <div class="partsButton" style="background:#418fde">MODULE 1</div></a>
+			<a href="greenhouse2.html"> <div class="partsButton">MODULE 2</div></a>
+			<a href="greenhouse3.html"> <div class="partsButton">MODULE 3</div></a>
 		</div>
 		<div class="flex-container">
-			<div class="partsButton" href="https://stat2games.sites.grinnell.edu/Greenhouse%20Game%20Instructions.pdf">R TUTORIAL</div>
-			<div class="partsButton" href="https://stat2games.sites.grinnell.edu/data/greenhouse/greenhouse.php">CODAPP</div>
-			<div class="partsButton" href="https://drive.google.com/drive/folders/1grDXTeyUgUaD2i9dIYgE9ykQcQ4nrtTN">HANDOUTS</div>
+			<a href="https://stat2games.sites.grinnell.edu/Greenhouse%20Game%20Instructions.pdf">  <div class="partsButton">R TUTORIAL</div></a>
+			<a href="https://stat2games.sites.grinnell.edu/data/greenhouse/greenhouse.php"> <div class="partsButton">CODAPP</div></a>
+			<a href="https://drive.google.com/drive/folders/1grDXTeyUgUaD2i9dIYgE9ykQcQ4nrtTN"> <div class="partsButton">HANDOUTS</div></a>
 		</div>
 		<article class = "TitleInfo" style = "width:100%;padding-top:50px">
 			<hr>
@@ -89,7 +91,7 @@
 	</section>
 	
 	<div id="second-wrapper">
-			<div class="partsButton" style="width:50%;margin-left:25%">Part 1A: Introduction</div>
+			<div class="sectionHeader">Part 1A: Introduction</div>
 			<br>
 			<h4>Farmers throughout the world face complex challenges. To deliver quality crops to market, farmers need to consider the multiple growing conditions:</h4>
 			<li>Soil appropriate to the plants, possibly modified with fertilizer</li>
@@ -107,7 +109,9 @@
 			<li>The game will ask you for a <strong>Player ID</strong>. You can use any name you like, but this will be on the internet, so do not use a name that will easily identify you.</li>
 			<li>If you are playing this game for a course, your instructor will provide a <strong>Group ID</strong> so you will be able to compete with everyone in your class.</li>
 			<br><br>
-			<div class="partsButton" style="width:50%;margin-left:25%">Part 1B: Learning the Greenhouse game</div>
+		
+		
+			<div class="sectionHeader">Part 1B: Learning the Greenhouse game</div>
 			<br>
 			<h4>To learn how to play the game, watch the video below:</h4>
 			  <section style="width:100%; height:auto;">
@@ -119,7 +123,7 @@
 	</div>
 	
 	<div id="third-wrapper">
-		<div class="partsButton" style="width:50%;margin-left:25%">Part 1C: Collecting Data</div>
+		<div class="sectionHeader">Part 1C: Collecting Data</div>
 		<h4 >The Greenhouse Game can also be an opportunity to consider a variety of research questions, such as what combination of growing conditions would optimize crop yields or profits? Most real-world research questions are much bigger than the resources available to study them, and researchers must limit the scope of their efforts. Similarly, we will start with a simplified question. We will <strong>estimate the corn yield based on the amount of water</strong>.</h4>	 
 		<h4>Use the Greenhouse game (below) to collect data on corn yield based on the amount of water:</h4>
 		<li>Provide a <strong>Player ID</strong> (see Figure 1). You may use any name you like: this name will be on the internet, so do not use a name that will easily identify you.</li>
@@ -143,8 +147,8 @@
 		
 	</section>
     	
-	  <section style="width:100%; height:auto;margin-left:25%">
-			<iframe src="https://www.stat2games.sites.grinnell.edu/games/greenhouse.html" style= "margin-left:-15%;width:100%; height: 700px; border:none"></iframe>
+	  <section class="gameView">
+			<iframe class="gameFrame" src="https://www.stat2games.sites.grinnell.edu/games/greenhouse.html"></iframe>
 		</section>
 	
     	
@@ -165,49 +169,40 @@
 	</div>
 	
 	
-<div id = "SecondSectionwrapper" style = "width:100%;height:auto">
-	<div style = "width:30%;float:left;color:Black;font-size: 12px; margin-left: -25%;margin-top:-10%">
-			<div>		
-				<h4 style="margin-left:10%;font-size:14px;margin-bottom:0px"><strong>Settings A</strong></h4> 
+	<div class="sideSettings">	
+				<h4 class="settingLine">Settings A</h4> 
 		
-        <li style="padding-left:0px; font-size:10px; margin-left: 30px"><a>Group ID&nbsp; &nbsp;<em><strong>sample1</strong></em></a></li>
-		<li style="padding-left:0px; font-size:10px; margin-left: 30px"><a>X-axis Variable:&nbsp; &nbsp;<em><strong>Water</strong></em></a></li>
-		<li style="padding-left:0px; font-size:10px; margin-left: 30px"><a>Y-axis Variable:&nbsp; &nbsp;<em><strong>Yield</strong></em></a></li>
-		<li style="padding-left:0px; font-size:10px; margin-left: 30px"><a>Statistical Model:&nbsp; &nbsp;<em><strong>Linear</strong></em></a></li>
-		<li style="padding-left:0px; font-size:10px; margin-left: 30px"><a>X-Axis Limits:&nbsp; &nbsp;<em><strong>(0 - 45)</strong></em></a></li>
-				
+        <li class="settingLine">Group ID&nbsp; &nbsp;<em><strong>sample1</strong></em></li>
+		<li class="settingLine">X-axis Variable:&nbsp; &nbsp;<em><strong>Water</strong></em></li>
+		<li class="settingLine">Y-axis Variable:&nbsp; &nbsp;<em><strong>Yield</strong></em></li>
+		<li class="settingLine">Statistical Model:&nbsp; &nbsp;<em><strong>Linear</strong></em></li>
+		<li class="settingLine">X-Axis Limits:&nbsp; &nbsp;<em><strong>(0 - 45)</strong></em></li>
+
+        <h4 class="settingLine">Settings B</h4>       
+        <li class="settingLine">Group ID&nbsp; &nbsp;<em><strong>[provided by instructor]</strong></em></li>
+        <li class="settingLine">X-axis Variable:&nbsp; &nbsp;<em><strong>Water</strong></em></li>
+        <li class="settingLine">Y-axis Variable:&nbsp; &nbsp;<em><strong>Yield</strong></em></li>
+        <li class="settingLine">Statistical Model:&nbsp; &nbsp;<em><strong>Linear</strong></em></li>
+        <li class="settingLine">X-Axis Limits:&nbsp; &nbsp;<em><strong>(0 - 45)</strong></em></li>
                 
-                <h4 style="margin-left:10%;font-size:14px;margin-bottom:0px"><strong>Settings B</strong></h4>       
-        <li style="padding-left:0px; font-size:10px; margin-left: 30px"><a>Group ID&nbsp; &nbsp;<em><strong>[provided by instructor]</strong></em></a></li>
-        <li style="padding-left:0px; font-size:10px; margin-left: 30px"><a>X-axis Variable:&nbsp; &nbsp;<em><strong>Water</strong></em></a></li>
-        <li style="padding-left:0px; font-size:10px; margin-left: 30px"><a>Y-axis Variable:&nbsp; &nbsp;<em><strong>Yield</strong></em></a></li>
-        <li style="padding-left:0px; font-size:10px; margin-left: 30px"><a>Statistical Model:&nbsp; &nbsp;<em><strong>Linear</strong></em></a></li>
-        <li style="padding-left:0px; font-size:10px; margin-left: 30px"><a>X-Axis Limits:&nbsp; &nbsp;<em><strong>(0 - 45)</strong></em></a></li>
-                
-				<br>
-		<h4 style="margin-left:10%;width:50%;font-size:14px"><strong>Figure 3: </strong>Interpreting the Output</h4>
-		<img src = "images/greenhouse1b.png" alt = "interpreting the output" style = "width:80%; display:inline-block;">
-		<h4 style = "width:60%;float:left;color:Black;font-size: 12px; margin-left:10%">Whenever you select a model in the application on the right, you will also see statistical output. In the output, you can find key summary statistics related to the model you have selected.</h4>		
-		<br><br><br><br><br><br><br><br><br>
-		<h4 style="margin-left:10%;font-size:14px;margin-right:15%"><strong>Instructors Note: </strong> Go to <a href="references.html">faculty resources</a> to access student data</h4>
-			</div>	
+		<br><br>
+		<h4 class="settingLine">Figure 3: Interpreting the Output</h4>
+		<img src = "images/greenhouse1b.png" alt = "interpreting the output" style = "width:70%; display:inline-block;margin-left: 30px;">
+		<h3 class="settingLine" style="weight:normal">Whenever you select a model in the application on the right, you will also see statistical output. In the output, you can find key summary statistics related to the model you have selected.</h3>	
+		<h3 class="settingLine"><strong>Instructors Note: </strong> Go to <a href="references.html">faculty resources</a> to access student data</h3>
 	</div>
 		
 	<div style = "width:60%;padding-left:1.5%;float:left">	
-	  <iframe src = "https://shiny.grinnell.edu/dataspace/greenhouse2/" width="105%" height="1000px" style = "border:none"></iframe>
-		
-  </div>
-		
-	<div id = "mainwrapper" style = "width:75%; height: auto;">
-		
-		<section id = "mainContent" style = "line-height:1.65;width:95%;height:auto;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000">
-		  <iframe src =  "https://www.stat2games.sites.grinnell.edu/dataspaceForms/greenhouse1.php" width = "100%" height = "1000px" style = "border:none;padding-right:15px;padding-bottom: 1px;"></iframe>
+	  <iframe src = "https://shiny.grinnell.edu/dataspace/greenhouse2/" width="105%" height="800px" style = "border:none"></iframe>
+	</div>
+	<div class = "discussionSection">
+		<section class = "discussionSubsection" >
+		  <iframe src =  "https://www.stat2games.sites.grinnell.edu/dataspaceForms/greenhouse1.php" width = "100%" height = "1000px"></iframe>
 		</section>
-		
-        <div id = "mainwrapper" style = "width:100%">
-            <section id = "mainContent" style = "line-height:1.65;width:95%;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000;margin-top:50px">
+
+    <section class="discussionSubsection">
                 
-                <h3>Part 1F: Greenhouse Challenge: Who can earn the most profits? <img src="images/Challenge.jpg" width="35" height="38" alt="challenge icon"/></h3>
+                <h3>Part 1F: Discussion Questions<img src="images/Challenge.jpg" width="35" height="38" alt="challenge icon"/></h3>
                 <p>Develop a strategy to optimize your profit when growing corn in Level 1 of the Greenhouse game. Use your statistical knowledge and any analyses you choose to address the following steps:</p>
                     <ol>1. Provide a graph and briefly explain how the graph helps you determine the amount of water that would give you the highest profits
                     </ol>
@@ -383,6 +378,5 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://dataspace.sites.grinnell.edu/tools/tracker.js"></script>
 </footer>	
-	</div>
 </body>
 </html>
