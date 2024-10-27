@@ -332,6 +332,34 @@ a {color: black}
 	margin: 0 0;
 }
 
+.partsButtonTwo{
+	width:600px;
+	height:60px;
+	background: black;
+	border: 2px solid white; 
+	color: white;
+	font-size:30px;
+	text-align:center;
+	display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+	margin: 0 0;
+}
+
+.partsButtonOne{
+	width:1200px;
+	height:60px;
+	background: black;
+	border: 2px solid white; 
+	color: white;
+	font-size:30px;
+	text-align:center;
+	display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+	margin: 0 0;
+}
+
 .sectionHeader{
 	display: flex;
 	justify-content: center;
@@ -366,7 +394,7 @@ a {color: black}
 	color: white;
 }
 
-.flex-container .partsButton:hover{
+.flex-container .partsButton:hover, .flex-container .partsButtonTwo:hover{
 	background: #418fde;
 
 }

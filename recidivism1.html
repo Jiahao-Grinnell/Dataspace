@@ -17,7 +17,7 @@
 	    	<a href = "https://www.grinnell.edu"> <img  src="images/MapLogoBg.png" alt="logo" width = "50" height = "40" style = "padding: 16px"> </a> 
 	   		<a style = "color:white;font-size:25px; padding-top: 16px; padding-right: 600px; font-family:'Oswald'" href="index.html"> Dataspace by DASIL </a>
 	   <div class = "dropdown" style = "float:left;padding-top:15px;padding-right:14px">
-	   		<button class = "dropbtn" href="stories.html"> Stories </button>
+	   		<a href="stories.html"><button class = "dropbtn" href="stories.html"> Stories </button></a>
 		   		<div class = "dropdown-content">
 					<div class = "dropdown" style="float:left; padding-top:15px; padding-right:14px">
 						<a class="dropbtn" href="brexit1.html">Brexit</a>
@@ -29,7 +29,7 @@
 	   			</div>
 	   </div>
 			<div class = "dropdown" style = "float:left;padding-top:15px;padding-right:14px" >
-	   			<button class = "dropbtn" > Games </button>
+	   			<a href="games.html"><button class = "dropbtn" > Games </button></a>
 		   		<div class = "dropdown-content">
 					<div class = "dropdown" style="float:left; padding-top:15px; padding-right:14px">
 						<a class="dropbtn" href="coffeetruck1.html">Coffee Truck</a>
@@ -54,16 +54,13 @@
 <body>
 	<div id = "mainwrapper" style = "width:75rem">
 		<div class="blackCover"></div>
-	 	<img src = "images/recidivismLong.jpg" style = "height:200px; width:100%;display:block;padding-top:100px" alt = "psychic">
+	 	<img src = "images/recidivismLong.jpg" style = "height:200px; width:100%;display:block;padding-top:100px" alt = "recidivism">
 		<div class="container">
         	<div class="overlay" style = "padding-top:150%;padding-left:200%;font-weight:bold;font-size:60px;padding-top:10px; margin-top:-100px;position:absolute">RECIDIVISM</div>
    		</div>
 		<div class="flex-container">
-			<div class="partsButton" href="recidivism1.html" style="background:#418fde;width:50%">MODULE 1</div>
-			<div class="partsButton" href="recidivism2.html" style="width:50%">MODULE 2</div>
-		</div>
-		<div class="flex-container">
-			<div class="partsButton" href="https://stat2labs.sites.grinnell.edu/racer.html" style="width:200%">HANDOUTS</div>
+			<a href="recidivism1.html"> <div class="partsButtonTwo" style="background:#418fde">MODULE 1</div></a>
+			<a href="recidivism2.html"> <div class="partsButtonTwo" >MODULE 2</div></a>
 		</div>
 		<article class = "TitleInfo" style = "width:100%;padding-top:50px">
 			<hr>
@@ -75,7 +72,7 @@
 	</div>	
 	
 	<div id="second-wrapper">
-			<div class="partsButton" style="width:50%;margin-left:25%">Part 1A: Introduction</div>
+			<div class="sectionHeader">Part 1A: Introduction</div>
 			<br>
 			<h4>The United States has the largest prison population and highest per-capita incarceration rate in the world. Both metrics have grown significantly in the past century, heavily outpacing population growth. Furthermore, “The US spends $270 billion annually funding the criminal justice system and maintaining <a href="https://obamawhitehouse.archives.gov/the-press-office/2016/04/23/cea-report-economic-perspectives-incarceration-and-criminal-justice">prisons</a>.” To incarcerated individuals, there is an approximate economic loss of <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2835847/">$15 billion annually</a>, wholly from tangible cost. With such high costs associated with imprisonment, it would be reasonable to expect the criminal justice system to carefully ensure a fair system when sentencing people to prison.</h4>
 			<h4>However, the fairness of the criminal justice system in the United States is currently being questioned. People convicted of the same crime can serve dramatically different prison sentences. In some instances, perpetrators convicted of heinous crimes, such as murder or rape, have faced <a href="https://www.usatoday.com/story/news/nation/2019/05/03/bus-driver-shane-pinche-wont-go-prison-rape-hes-not-alone/3653181002/">little to no prison time</a>. In other circumstances, convicted individuals have been sentenced to life in prison for petty theft, such as stealing <a href="https://www.blackenterprise.com/alabama-man-serving-life-sentence-stealing-9-dollars/">nine dollars</a>, a pair of <a href="https://www.washingtonpost.com/nation/2020/10/19/life-sentence-prison-reentry-bryant/">hedge clippers</a>, or even just a <a href="https://www.latimes.com/archives/la-xpm-1995-03-03-me-38444-story.html#:~:text=Jerry%20Dewayne%20Williams%20was%20sentenced,Superior%20Court%20Judge%20Donald%20F">slice of pizza</a>.</h4>
@@ -83,7 +80,7 @@
 			<h4>One major criticism of the United States’ prison system is that the extenuating circumstances are not evaluated fairly by judges and juries. It is difficult to avoid the influence of personal biases and opinions in determining a suspect's guilt, intent, and likelihood of recidivating. What if there was a way to limit the influence of human bias in sentencing while also accurately predicting whether an individual would recidivate? This was the promise of machine learning.</h4>
 			<br><br><br>
 		
-			<div class="partsButton" style="width:50%;margin-left:25%">Part 1B: Recidivism in the United States</div>
+			<div class="sectionHeader">Part 1B: Recidivism in the United States</div>
 			<h4>There is a high likelihood for convicted prisoners to recidivate. A U.S. Bureau of Justice report studied 401,288 released prisoners across 30 states in 2005 and found that 83% of released prisoners were arrested at least once after their release, with most arrests occurring within 5 years of release.</h4>
 			<br><br>
 			<img src="images/RecidivismGraph.png" alt="5-year recidivism of released state prisoners 2005" style="width:40%;margin-left:30%">
@@ -101,7 +98,7 @@
   	</div>
 	
 	<div id="second-wrapper">
-			<div class="partsButton" style="width:50%;margin-left:25%">Part 1C: Machine Learning Reducing Bias? </div>
+			<div class="sectionHeader">Part 1C: Machine Learning Reducing Bias? </div>
 			<h4>Can machine learning algorithms reduce bias when predicting recidivism?</h4>
 			<h4>Many states, such as <a href="https://stanfordpolitics.org/2020/09/13/ai-prediction-tools-claim-to-alleviate-an-overcrowded-american-justice-system-but-should-they-be-used/">New York, California, Florida</a>, have used government funds to purchase the COMPAS algorithm to assist judges in determining the length of over one million defendants’ sentences based on their likelihood of recidivating. The algorithm takes in public criminal profile data and a set of 137 interview questions answered by the defendant, which are used to gather information on past criminal involvement, relationships, lifestyle, personality, familial background, and education level, to produce a 1-10 score representing the risk level of the individual recidivating. Since the algorithm was created by a private firm, certain details are proprietary.</h4>
 			<h4>Northpointe claimed the COMPAS algorithm was unbiased against race, since it does not include race when making its predictions. ProPublica, a nonprofit newsroom that aims to produce investigative journalism in the public interest, decided to test this claim.</h4>
@@ -131,7 +128,7 @@
 		<br>
 	</div>	
 
-	<div class="partsButton" style="width:50%;margin-left:25%" href="recidivism2.html">Continue to Part 2</div>
+	<a href="recidivism2.html"><div class="partsButton" style="width:50%;margin-left:25%">Continue to Part 2</div></a>
 
 	
 	<h2>&nbsp;</h2>
