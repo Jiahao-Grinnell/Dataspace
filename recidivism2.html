@@ -102,18 +102,15 @@
 		<br><br>
 			<iframe src = "https://bowsermince.shinyapps.io/CartRecid/" width= "100%" height="1450px" style = "border:none">
 		</iframe>	
-	</div>
 
-	<div id = "SecondSectionwrapper" style = "width:100%;height:61rem">
 		<div style = "width:25%;float:left">
-			<iframe src =  "https://stat2games.sites.grinnell.edu/dataspaceForms/recidivism2.php" width = "100%" height = "815px" style = "border:none;padding-right:15px;padding-bottom: 50px"></iframe>	
 			</div>
 			<h4>Predicting if someone will recidivate is a difficult task. While decision trees are powerful classifying algorithms, they have their advantages and disadvantages. Unlike many machine learning algorithms, decision trees are white-box, meaning the user can see the steps taken in order to classify an individual, and the construction of the tree can be clearly explained; furthermore, they are easy to understand and interpret. Generally, though, decision trees alone are not useful as they are unstable, lack flexibility, and are relatively inaccurate compared to other algorithms.</h4>
 			<h4>While the COMPAS algorithm is proprietary, its mechanisms are likely more complex than a standard decision tree. By adopting concepts from decision trees, we can build a more advanced model known as a random forest. Instead of outputting one specific category, a random forest returns a probability of some outcome occurring based on the results of many decision trees. For example, the decision tree for recisivism in the above app will result in either a Yes or No response. Random forest algorithms provide the probability of a person recidivating. When used to predict recidivism, we can use this probabilistic output to create a more equitable model.</h4>
 			<h4>A very useful aspect of random forests is that the result is an aggregation of many different, uncorrelated decision trees. Each tree in a random forest is made from bootstrapped data -- a method where a new sample is created by randomly selecting rows from the original sample (with replacement). Another reason random forests produce different trees is because only a subset of variables are considered at each node of a tree’s construction. Since trees are created with bootstrapping and we aggregate the results of many trees to return a probability of an outcome, a random forest is known as a bagging algorithm.</h4>
 			<br>
 			</div>
-	
+	</div>
 	<div id="second-wrapper">
 			<img src="images/recidivism2data.png" alt="Human versus COMPAS algorithmic predictions" style="width:40%;margin-left:30%">
 			<br><br>
@@ -136,28 +133,32 @@
 		<br><br>
 	</div>
 
-	<div id = "mainwrapper" style = "width:75%">
-		<section id = "mainContent" style = "line-height:1.65;width:95%;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000">
+	
+	<div class = "discussionSection">
+		<section class = "discussionSubsection" >
+			<iframe src =  "https://stat2games.sites.grinnell.edu/dataspaceForms/recidivism2.php" width = "100%" height = "815px" style = "border:none;padding-right:15px;padding-bottom: 50px"></iframe>	
+		</section>
+		<section class = "discussionSubsection" >
 			<h3><strong>Part 1C: Get Curious</strong><img src="images/GetCurious.jpg" width="35" height="32" alt="get curious icon"/></h3>
-            <h4>1. In the application above, how is the filter tab useful?</h4>
-			<h4>2. Do people who were identified as female by the police have the same arrest patterns as those who were identified as male?</h4>
-			<h4>3. In the application above, can we create a graphic that effectively uses both the "Facet By" and "Color By" options?</h4>
-           	<h4>4. What is the best accuracy you can achieve?</h4>
-			<h4>5. Do accuracies vary by race? By age? What implications does this have?</h4>
-			<h4>6. Why do you think accuracies can go down when more variables are added?</h4>
-			<h4>7. Should states across the US continue to use the COMPAS algorithm? Why or why not?</h4>
-           	<h4>8. Can we guarantee justice in the courtroom for all individuals when inherently biased algorithms are used in the decision process?</h4>
-			<h4>9. What questions should be asked before spending government money on such algorithms?</h4>
-			<h4>10. What other real-world applications could CART have?</h4>
+            <p>1. In the application above, how is the filter tab useful?</p>
+			<p>2. Do people who were identified as female by the police have the same arrest patterns as those who were identified as male?</p>
+			<p>3. In the application above, can we create a graphic that effectively uses both the "Facet By" and "Color By" options?</p>
+           	<p>4. What is the best accuracy you can achieve?</p>
+			<p>5. Do accuracies vary by race? By age? What implications does this have?</p>
+			<p>6. Why do you think accuracies can go down when more variables are added?</p>
+			<p>7. Should states across the US continue to use the COMPAS algorithm? Why or why not?</p>
+           	<p>8. Can we guarantee justice in the courtroom for all individuals when inherently biased algorithms are used in the decision process?</p>
+			<p>9. What questions should be asked before spending government money on such algorithms?</p>
+			<p>10. What other real-world applications could CART have?</p>
 			<br><br>
 		</section>
 	</div>
 
-		<br>
+		<br><br><br>
 	</div>	
 
-	<div class="partsButton" style="width:50%;margin-left:25%" href="stories.html">Explore Other Stories</div>
-
+	<a href="stories.html"><div class="partsButton" style="width:50%;margin-left:25%">Explore Other Stories</div></a>
+<br><br>
 	
 	<h2>&nbsp;</h2>
 	<section style = "width:100%; overflow:hidden">
