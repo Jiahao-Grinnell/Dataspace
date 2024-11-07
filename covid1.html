@@ -15,9 +15,13 @@
     ****************************************************************************-->
    		<nav>
 	    	<a href = "https://www.grinnell.edu"> <img  src="images/MapLogoBg.png" alt="logo" width = "50" height = "40" style = "padding: 16px"> </a> 
-	   		<a style = "color:white;font-size:25px; padding-top: 16px; padding-right: 600px; font-family:'Oswald'" href="index.html"> Dataspace by DASIL </a>
-	   <div class = "dropdown" style = "float:left;padding-top:15px;padding-right:14px">
-	   		<button class = "dropbtn" href="stories.html"> Stories </button>
+	   		<a style = "color:white;font-size:25px; padding-top: 16px; font-family:'Oswald';padding-right:550px" href="index.html"> Dataspace by DASIL </a>
+		<div class = "dropdownContainer">
+		<div class = "dropdown">
+	   		<a href="index.html"><button class = "dropbtn" > Home </button></a>
+		</div>
+	   <div class = "dropdown">
+	   		<a href="stories.html"><button class = "dropbtn" href="stories.html"> Stories </button></a>
 		   		<div class = "dropdown-content">
 					<div class = "dropdown" style="float:left; padding-top:15px; padding-right:14px">
 						<a class="dropbtn" href="brexit1.html">Brexit</a>
@@ -28,8 +32,8 @@
                     </div>
 	   			</div>
 	   </div>
-			<div class = "dropdown" style = "float:left;padding-top:15px;padding-right:14px" >
-	   			<button class = "dropbtn" > Games </button>
+			<div class = "dropdown">
+	   			<a href="games.html"><button class = "dropbtn" > Games </button></a>
 		   		<div class = "dropdown-content">
 					<div class = "dropdown" style="float:left; padding-top:15px; padding-right:14px">
 						<a class="dropbtn" href="coffeetruck1.html">Coffee Truck</a>
@@ -40,15 +44,14 @@
                     </div>
 	   			</div>
 	   		</div>
-	   <div class = "dropdown" style = "float:left;padding-top:15px" >
-	   		<button class = "dropbtn" > Resources </button>
+	   <div class = "dropdown">
+	   		<a href=resources.html><button class = "dropbtn" > Resources </button></a>
 	   			<div class = "dropdown-content">
-		   			<a href = "../../Downloads/brexit/racer1.html">Datasets</a>
-		   			<a href = "../../Downloads/brexit/greenhouse1.html">DASIL Lab</a>
-		  			<a href = "../../Downloads/brexit/statsgrounded1.html">Student Guide</a>
-		  			<a href = "../../Downloads/brexit/statsgrounded1.html">Faculty Guide</a>
+		   			<a href = "datasets.html">Datasets</a>
+		   			<a href = "https://dasil.sites.grinnell.edu/">DASIL Lab</a>
 		   		</div>
 	   </div>
+	</div>
 	</nav>
     </div>
 <body>
@@ -66,9 +69,8 @@
 		</div>
 		<article class = "TitleInfo" style = "width:100%;padding-top:50px">
 			<hr>
-			<h1 style = "color:black;font-size:36px;font-family:'Oswald';text-align:center">COVID-19</h1>
-			<h4 style="text-align:center">Exploring Racial Disparities in New York City's Stop-and-Frisk Policies</h4>
-			<p style="font-style:italic;margin: 0 auto; text-align:center">By Shonda Kuiper. Contributors: Yusen He, Allie Jones, Shreyas Agrawal '24, Bowen Mince '22, Wagih Henawi '22, Adam Solar '22, Ying Long '17, Krit Petrachaianan '17, Zachary Segall '18</p>
+			<h4 class="title">Exploring Racial Disparities in New York City's Stop-and-Frisk Policies</h4>
+			<p class="titleContributors">By Shonda Kuiper. Contributors: Yusen He, Allie Jones, Shreyas Agrawal '24, Bowen Mince '22, Wagih Henawi '22, Adam Solar '22, Ying Long '17, Krit Petrachaianan '17, Zachary Segall '18</p>
 			<hr>
 			<br>
 		</article>
@@ -122,15 +124,10 @@
 			<h4>Each one of the formally assumed values can dramatically influence the model. However, in reality, these values are not known, especially at the beginning of an epidemic. Thus, researchers must estimate each of the assumed values. Below is an app that illustrates a basic SIR model. Try changing the parameters to see how they affect the overall spread of the disease. Then, answer the questions to the right to check your understanding. By understanding this model and the calculations below, we can see why at the beginning of the pandemic the spread of COVID-19 was often represented as a "curve".</h4>
 			<br><br><br>
 	</div>
-	
-	<div id = "SecondSectionwrapper" style = "width:100%;height:61rem">
-	<div style = "width:25%;float:left">
-			<iframe src =  "https://www.stat2games.sites.grinnell.edu/dataspaceForms/covid1.php" width = "100%" height = "815px" style = "border:none;padding-right:15px;padding-bottom: 50px"></iframe>	
-	</div>
-	<div style = "width:65%;padding-left:40px;float:left">
+
+	<div style = "width:70%;padding-left:15%">
 		<iframe src = "https://shiny.grinnell.edu/dataspace/covid1" width = "100%" height="900px" style = "border:none"  ></iframe>
 			</div>
-		</div>
 
 	<div id="second-wrapper">
 		<h4><strong>Calculation Details</strong></h4>
@@ -183,9 +180,13 @@
 		<h4>To view a more complex shiny app with more variables for modeling Covid, click <a href="https://alhill.shinyapps.io/COVID19seir/">here</a>. Grinnell College students Senay Gockcebel, Britney He, Bowen Mince, and Linh Tang did a simulation study on a more complex model. See the paper here. The Github for it can be reached <a href="https://github.com/LinhTangTD/COVID19_Modeling">here</a>.</h4>
 		<br><br><br>
 	</div>
-	</div>	
+	<div class = "discussionSection">
+		<section class = "discussionSubsection" >
+			<iframe src =  "https://www.stat2games.sites.grinnell.edu/dataspaceForms/covid1.php" width = "100%" height = "1000px" style = "border:none;padding-right:15px;padding-bottom: 50px"></iframe>	
+		</section>
+	</div>
 
-	<div class="partsButton" style="width:50%;margin-left:25%" href="stories.html">Explore Other Stories</div>
+	<a  href="stories.html"><div class="partsButton" style="width:50%;margin-left:25%">Explore Other Stories</div></a>
 	<br><br><br>
 
 	<section style = "width:100%; overflow:hidden">

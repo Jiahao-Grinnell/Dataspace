@@ -15,7 +15,8 @@
     ****************************************************************************-->
    		<nav>
 	    	<a href = "https://www.grinnell.edu"> <img  src="images/MapLogoBg.png" alt="logo" width = "50" height = "40" style = "padding: 16px"> </a> 
-	   		<a style = "color:white;font-size:25px; padding-top: 16px; padding-right: 600px; font-family:'Oswald'" href="index.html"> Dataspace by DASIL </a>
+	   		<a style = "color:white;font-size:25px; padding-top: 16px; font-family:'Oswald';padding-right:550px" href="index.html"> Dataspace by DASIL </a>
+		<div class = "dropdownContainer">
 		<div class = "dropdown">
 	   		<a href="index.html"><button class = "dropbtn" > Home </button></a>
 		</div>
@@ -44,14 +45,13 @@
 	   			</div>
 	   		</div>
 	   <div class = "dropdown">
-	   		<a href="resources.html"><button class = "dropbtn" > Resources </button></a>
+	   		<a href=resources.html><button class = "dropbtn" > Resources </button></a>
 	   			<div class = "dropdown-content">
-		   			<a href = "../../Downloads/brexit/racer1.html">Datasets</a>
-		   			<a href = "../../Downloads/brexit/greenhouse1.html">DASIL Lab</a>
-		  			<a href = "../../Downloads/brexit/statsgrounded1.html">Student Guide</a>
-		  			<a href = "../../Downloads/brexit/statsgrounded1.html">Faculty Guide</a>
+		   			<a href = "datasets.html">Datasets</a>
+		   			<a href = "https://dasil.sites.grinnell.edu/">DASIL Lab</a>
 		   		</div>
 	   </div>
+	</div>
 	</nav>
     </div>
 <body>
@@ -73,8 +73,8 @@
 		</div>
 		<article class = "TitleInfo" style = "width:100%;padding-top:50px">
 			<hr>
-			<h1 style = "color:black;font-size:36px;font-family:'Oswald';text-align:center">Using statistics to succeed in coffee business</h1>
-			<p style="font-style:italic;margin: 0 auto; text-align:center">Contributors: Shonda Kuiper</p>
+			<h1 class=title>Using statistics to succeed in coffee business</h1>
+			<p class="titleContributors">Contributors: Shonda Kuiper</p>
 			<hr>
 			<br>
 		</article>
@@ -82,11 +82,9 @@
 
 	<section id = "rightContent">
 		<aside id="rightcontent" style = "width:100%">		
-			<h2>&nbsp;  </h2>
-			<h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2>
-			<br><br><br>
+			<br><br><br><br><br><br>
 			<h3> <strong style = "font-size: 20px; padding-right: 10px; margin-left:-20%">Fun Fact:</strong><img src="images/FunFact.png" width="38" height="28" alt="fun fact icon"/></h3>
-			<h4 style="width:100%;font-size:16px;margin-left:-3%"> In business, expenses are often categorized as either "fixed" or "variable," much like a regression equation—think y = a + bx, where ‘a‘ represents the fixed expenses ($300), ‘b‘ is the cost of each sale ($0.50), and 'x' stands for the number of cups sold.</h4> </aside>
+			<div class="funFact"> In business, expenses are often categorized as either "fixed" or "variable," much like a regression equation—think y = a + bx, where ‘a‘ represents the fixed expenses ($300), ‘b‘ is the cost of each sale ($0.50), and 'x' stands for the number of cups sold.</div> </aside>
 	</section>
 	
 	<div id="second-wrapper">
@@ -156,7 +154,7 @@
 	</div>
 	
 	
-<div id = "SecondSectionwrapper" style = "width:100%;height:auto">
+	<div id="second-wrapper">
 		<div style = "width:20%;float:left;color:Black;font-size: 12px;">
 			<div>
 				<br><br><br><br><br><br><br><br><br>
@@ -173,16 +171,13 @@
 		<div style = "width:80%;float:right;margin-left:-200px">	
 	  		<iframe src = " https://shiny.grinnell.edu/coffee2/" width="100%" height="1000px" style = "border:none"></iframe>
  		</div>
-		
-	<div id = "mainwrapper" style = "width:75%; height: auto">
-			
-		<section id = "mainContent" style = "line-height:1.65;width:95%;height:auto;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000">
+	</div>
+	<div class = "discussionSection">
+		<section class = "discussionSubsection" >
 		  <iframe src =  "https://www.stat2games.sites.grinnell.edu/dataspaceForms/coffeet1.php" width = "100%" height = "1000px" style = "border:none;padding-right:15px;padding-bottom: 1px"></iframe>
 		</section>
-		
-        <div id = "mainwrapper" style = "width:100%">
-            <section id = "mainContent" style = "line-height:1.65;width:95%;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000;margin-top:50px">
-                <h4>Part 1E: Statistically Grounded Challange <img src="images/Challenge.jpg" width="35" height="38" alt="challenge icon"/></h4>
+		<section class = "discussionSubsection" >
+                <h3>Part 1E: Statistically Grounded Challange <img src="images/Challenge.jpg" width="35" height="38" alt="challenge icon"/></h3>
                 <p>1) Enter your Player ID and Group ID into the Coffee Truck App1. Verify that you have exactly 10 samples from each location. Note that sometimes in can take the data a few hours to load, so if you do not see your data in the App, try again later. Using Sales as the response variable, conduct a two-sample t-test to determine if there is a differences in the locations.</p>
 				<br>
 				<p>2) Enter your Player ID and Group ID into the Coffee Truck App1. Verify that you have exactly 10 samples from each location. Note that sometimes in can take the data a few hours to load, so if you do not see your data in the App, try again later. Using Sales as the response variable, conduct a two-sample t-test to determine if there is a differences in the locations.</p>
@@ -199,13 +194,10 @@
 				<p>7) When conducting a two‐sample t‐test, the p‐value is the probability of obtaining a test statistic at least as extreme as the one that was actually observed, assuming that the null hypothesis is true. Write a short paragraph to Jo giving a practical explanation of p‐values and alpha levels in the context of this study. More specifically, explain why the p‐values tended to be inconsistent even though the business district is truly better than the park. </p>
                	<iframe style="float:center;border:none" src="https://shiny.grinnell.edu/dataspace/GHLevel1HighScores/" width="100%" height="450px"></iframe>
             </section>
-            
-            
-            </div>
- 
-		<br>
+          </div>
 </div>	
-	<div class="partsButton" style="width:50%;margin-left:25%" href="games.html">Explore Other Games</div>
+	<br><br>
+	<a href="games.html"><div class="partsButton" style="width:50%;margin-left:25%">Explore Other Games</div></a>
 		<br><br><br>
 	
 	<section style = "width:100%; overflow:hidden">

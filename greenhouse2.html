@@ -15,9 +15,13 @@
     ****************************************************************************-->
    		<nav>
 	    	<a href = "https://www.grinnell.edu"> <img  src="images/MapLogoBg.png" alt="logo" width = "50" height = "40" style = "padding: 16px"> </a> 
-	   		<a style = "color:white;font-size:25px; padding-top: 16px; padding-right: 550px; font-family:'Oswald'" href="index.html"> Dataspace by DASIL </a>
-	   <div class = "dropdown" style = "float:left;padding-top:15px;padding-right:14px">
-	   		<button class = "dropbtn" href="stories.html"> Stories </button>
+	   		<a style = "color:white;font-size:25px; padding-top: 16px; font-family:'Oswald';padding-right:550px" href="index.html"> Dataspace by DASIL </a>
+		<div class = "dropdownContainer">
+		<div class = "dropdown">
+	   		<a href="index.html"><button class = "dropbtn" > Home </button></a>
+		</div>
+	   <div class = "dropdown">
+	   		<a href="stories.html"><button class = "dropbtn" href="stories.html"> Stories </button></a>
 		   		<div class = "dropdown-content">
 					<div class = "dropdown" style="float:left; padding-top:15px; padding-right:14px">
 						<a class="dropbtn" href="brexit1.html">Brexit</a>
@@ -28,8 +32,8 @@
                     </div>
 	   			</div>
 	   </div>
-			<div class = "dropdown" style = "float:left;padding-top:15px;padding-right:14px" >
-	   			<button class = "dropbtn" > Games </button>
+			<div class = "dropdown">
+	   			<a href="games.html"><button class = "dropbtn" > Games </button></a>
 		   		<div class = "dropdown-content">
 					<div class = "dropdown" style="float:left; padding-top:15px; padding-right:14px">
 						<a class="dropbtn" href="coffeetruck1.html">Coffee Truck</a>
@@ -40,15 +44,14 @@
                     </div>
 	   			</div>
 	   		</div>
-	   <div class = "dropdown" style = "float:left;padding-top:15px" >
-	   		<button class = "dropbtn" > Resources </button>
+	   <div class = "dropdown">
+	   		<a href=resources.html><button class = "dropbtn" > Resources </button></a>
 	   			<div class = "dropdown-content">
-		   			<a href = "../../Downloads/brexit/racer1.html">Datasets</a>
-		   			<a href = "../../Downloads/brexit/greenhouse1.html">DASIL Lab</a>
-		  			<a href = "../../Downloads/brexit/statsgrounded1.html">Student Guide</a>
-		  			<a href = "../../Downloads/brexit/statsgrounded1.html">Faculty Guide</a>
+		   			<a href = "datasets.html">Datasets</a>
+		   			<a href = "https://dasil.sites.grinnell.edu/">DASIL Lab</a>
 		   		</div>
 	   </div>
+	</div>
 	</nav>
     </div>
 <body>
@@ -72,8 +75,8 @@
 		</div>
 		<article class = "TitleInfo" style = "width:100%;padding-top:50px">
 			<hr>
-			<h1 style = "color:black;font-size:36px;font-family:'Oswald';text-align:center">Using Regression Models to Grow the Best Crops</h1>
-			<p style="font-style:italic;margin: 0 auto; text-align:center">Contributors: Shonda Kuiper, Anna Olsen, Ginger Rowell, DASIL, Shreyas Agrawal' 24</p>
+			<h1 class="title">Using Regression Models to Grow the Best Crops</h1>
+			<p class="titleContributors">Contributors: Shonda Kuiper, Anna Olsen, Ginger Rowell, DASIL, Shreyas Agrawal' 24</p>
 			<hr>
 			<br>
 		</article>
@@ -81,11 +84,9 @@
 
 	<section id = "rightContent">
 		<aside id="rightcontent" style = "width:100%">		
-			<h2>&nbsp;  </h2>
-			<h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2>
-			<br><br><br>
+			<br><br><br><br><br><br>
 			<h3> <strong style = "font-size: 20px; padding-right: 10px; margin-left:-20%">Fun Fact:</strong><img src="images/FunFact.png" width="38" height="28" alt="fun fact icon"/></h3>
-			<h4 style="width:100%;font-size:16px;margin-left:-3%"> Several statistics techniques were originally developed to address agricultural research questions. Click <a href="https://www.stat.iastate.edu/department-history">here</a> to read more!</h4> </aside>
+			<h4 class="funFact"> Several statistics techniques were originally developed to address agricultural research questions. Click <a href="https://www.stat.iastate.edu/department-history">here</a> to read more!</h4> </aside>
 	</section>
 	
 	<div id="second-wrapper">
@@ -106,7 +107,6 @@
 			<h4>We will use <strong>Settings A</strong> (at left) in the Greenhouse Models app to gain a better visual understanding of more advanced regression models shown above. Check your understanding with the <strong>Exploring Regression Models</strong> questions below.</h4>
 	</div>
 	
-<div id = "SecondSectionwrapper" style = "width:100%;height:auto">
 	<div style = "width:20%;float:left;color:Black;font-size: 14px; margin-top: -10%">
 			<div>		
 				<h4 style="margin-left:10%;font-size:18px;margin-bottom:0px"><strong>Settings A</strong></h4> 
@@ -140,32 +140,25 @@
 	  <iframe src = "https://shiny.grinnell.edu/dataspace/greenhouse2/" width="100%" height="1000px" style = "border:none"></iframe>	
   	</div>
 		
-	<div id = "mainwrapper" style = "width:75%; height: auto">
-		
-		<section id = "mainContent" style = "line-height:1.65;width:95%;height:auto;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000">
+	<div class = "discussionSection">
+		<section class = "discussionSubsection" >
 		  <iframe src =  "https://www.stat2games.sites.grinnell.edu/dataspaceForms/greenhouse2.php" width = "100%" height = "1000px" style = "border:none;padding-right:15px;padding-bottom: 1px"></iframe>
 		</section>
-		
-        <div id = "mainwrapper" style = "width:100%">
-            <section id = "mainContent" style = "line-height:1.65;width:95%;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000;margin-top:50px">
+		<section class = "discussionSubsection">
                 <h4 style="font-weight:bold">Part 2D: Greenhouse Challenge: Drawing Conclusions from Data <img src="images/Challenge.jpg" width="35" height="38" alt="challenge icon"/></h4>
 					<br>
-                    <h4><strong>1. Use Settings A for the following (make sure only sample1 is selected):</strong></h4>
-					<h4 style="font">a) Explain why you would expect the quadratic model to have a higher R-squared value than the linear model</h4>
-					<h4>b) Explain why you would expect the quadratic model to have a similar R-squared value as the cubic model</h4>
-					<h4 style="font-weight:normal">c) When we used only sample1 data, the linear model was somewhat effective. When both sample1 and sample2 data are used for the corn crop, the coefficients for the linear model changed. Explain why the R-squared valued dropped so much when both sample1 and sample2 data are used.</h4>
-					<h4>d) Give a possible explanation as to why the p-value for X<sup>2</sup> under the cubic model is so different than with the quadratic model. How does this help to explain why these individual p-values should not be used when trying to determine whether or not a term is important in our model?</h4>
+                    <p><strong>1. Use Settings A for the following (make sure only sample1 is selected):</strong></h4>
+					<p>a) Explain why you would expect the quadratic model to have a higher R-squared value than the linear model</p>
+					<p>b) Explain why you would expect the quadratic model to have a similar R-squared value as the cubic model</p>
+					<p style="font-weight:normal">c) When we used only sample1 data, the linear model was somewhat effective. When both sample1 and sample2 data are used for the corn crop, the coefficients for the linear model changed. Explain why the R-squared valued dropped so much when both sample1 and sample2 data are used.</p>
+					<p>d) Give a possible explanation as to why the p-value for X<sup>2</sup> under the cubic model is so different than with the quadratic model. How does this help to explain why these individual p-values should not be used when trying to determine whether or not a term is important in our model?</p>
 					<br>
-                    <h4><strong>2. Use Settings B for the following (make sure only sample2 is selected):</strong></h4>
-					<h4>a) Explain how the interaction term (i.e. Water*Tomatoes in this example) modifies our predictions.</h4>
-					<h4>b) Explain why the interaction term should be included if you are interested in accurately predicting crop yields.</h4>
-					<h4>c) Notice that the linear coefficient is negative ( - 0.30347*X) in the model with an interaction. However it is positive ( 0.01632*X) in the model without an interaction. When there are multiple terms in a regression model, does it appear that the direction of the coefficients are meaningful? In other words, explain why we should be hesitant to say that the model shows “adding water will increase yields” or “adding water will decrease yields”.</h4>	
+                    <p><strong>2. Use Settings B for the following (make sure only sample2 is selected):</strong></p>
+					<p>a) Explain how the interaction term (i.e. Water*Tomatoes in this example) modifies our predictions.</p>
+					<p>b) Explain why the interaction term should be included if you are interested in accurately predicting crop yields.</p>
+					<p>c) Notice that the linear coefficient is negative ( - 0.30347*X) in the model with an interaction. However it is positive ( 0.01632*X) in the model without an interaction. When there are multiple terms in a regression model, does it appear that the direction of the coefficients are meaningful? In other words, explain why we should be hesitant to say that the model shows “adding water will increase yields” or “adding water will decrease yields”.</p>	
             </section>
-           </div>
-	<div id = "mainwrapper" style = "width:100%">
-        
-        <section id = "mainContent" style = "line-height:1.65;width:95%;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000;padding:5px 20px 20px">
-            
+            <section class = "discussionSubsection" >
             <h4 style="font-weight:bold">2E: Data Literacy Breakdown  <img src="images/DataLiteracy.jpg" width="35" height="32" alt="data literacy icon"/></h4>
                 <ol><strong>3. Take a few minutes to read the one-page <a href="https://www.nature.com/articles/431525a" target = "_blank">Nature article</a></strong><br>
                     <ol>
@@ -183,9 +176,8 @@
                 </ol>
         </section>
         </div>
-
 		<br>
-</div>	
+	
 	<div class="partsButton" style="width:50%;margin-left:25%" href="greenhouse3.html">Continue to Part 3</div>
 	
 	<h2>&nbsp;</h2>

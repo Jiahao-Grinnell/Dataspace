@@ -8,15 +8,19 @@
 <link href="css/Style1.css" rel="stylesheet" type="text/css">
 <link rel="icon" type="image/x-icon" href="images/MapLogo.ico">
 </head>
-	
+		
 		<div id="nav-wrapper"> 
 	    <!--**************************************************************************
     Header starts here. It contains Logo and 7 navigation links. 
     ****************************************************************************-->
    		<nav>
-	    	<a href = "https://www.grinnell.edu"> <img  src="../../Downloads/brexit/images/MapLogoBg.png" alt="logo" width = "50" height = "40" style = "padding: 16px"> </a> 
-	   		<a style = "color:white;font-size:25px; padding-top: 16px; padding-right: 600px; font-family:'Oswald'" href="index.html"> Dataspace by DASIL </a>
-	   <div class = "dropdown" style = "float:left;padding-top:15px;padding-right:14px">
+	    	<a href = "https://www.grinnell.edu"> <img  src="images/MapLogoBg.png" alt="logo" width = "50" height = "40" style = "padding: 16px"> </a> 
+	   		<a style = "color:white;font-size:25px; padding-top: 16px; font-family:'Oswald';padding-right:550px" href="index.html"> Dataspace by DASIL </a>
+		<div class = "dropdownContainer">
+		<div class = "dropdown">
+	   		<a href="index.html"><button class = "dropbtn" > Home </button></a>
+		</div>
+	   <div class = "dropdown">
 	   		<a href="stories.html"><button class = "dropbtn" href="stories.html"> Stories </button></a>
 		   		<div class = "dropdown-content">
 					<div class = "dropdown" style="float:left; padding-top:15px; padding-right:14px">
@@ -28,7 +32,7 @@
                     </div>
 	   			</div>
 	   </div>
-			<div class = "dropdown" style = "float:left;padding-top:15px;padding-right:14px" >
+			<div class = "dropdown">
 	   			<a href="games.html"><button class = "dropbtn" > Games </button></a>
 		   		<div class = "dropdown-content">
 					<div class = "dropdown" style="float:left; padding-top:15px; padding-right:14px">
@@ -40,15 +44,14 @@
                     </div>
 	   			</div>
 	   		</div>
-	   <div class = "dropdown" style = "float:left;padding-top:15px" >
-	   		<button class = "dropbtn" > Resources </button>
+	   <div class = "dropdown">
+	   		<a href=resources.html><button class = "dropbtn" > Resources </button></a>
 	   			<div class = "dropdown-content">
-		   			<a href = "../../Downloads/brexit/racer1.html">Datasets</a>
-		   			<a href = "../../Downloads/brexit/greenhouse1.html">DASIL Lab</a>
-		  			<a href = "../../Downloads/brexit/statsgrounded1.html">Student Guide</a>
-		  			<a href = "../../Downloads/brexit/statsgrounded1.html">Faculty Guide</a>
+		   			<a href = "datasets.html">Datasets</a>
+		   			<a href = "https://dasil.sites.grinnell.edu/">DASIL Lab</a>
 		   		</div>
 	   </div>
+	</div>
 	</nav>
     </div>
 <body>
@@ -70,8 +73,8 @@
 		</div>
 		<article class = "TitleInfo" style = "width:100%;padding-top:50px">
 			<hr>
-			<h1 style = "color:black;font-size:36px;font-family:'Oswald';text-align:center">Complete a research study</h1>
-			<p style="font-style:italic;margin: 0 auto; text-align:center">Contributors: Shonda Kuiper, DASIL, Shreyas Agrawal '24, Ginger Rowell, Rod Sturdivant</p>
+			<h1 class="title">Complete a research study</h1>
+			<p class="titleContributors">Contributors: Shonda Kuiper, DASIL, Shreyas Agrawal '24, Ginger Rowell, Rod Sturdivant</p>
 			<hr>
 			<br>
 		</article>
@@ -155,8 +158,6 @@
 		<br><br>
 	</div>
 	
-		
-<div id = "SecondSectionwrapper" style = "width:100%;height:auto">
 	<div style = "width:25%;float:left;color:Black;font-size: 16px;">
 			<div>		
 				<br><br>
@@ -175,54 +176,45 @@
     <div style="width:60%;padding-left:1.5%;float:left">
       <iframe src="https://shiny.grinnell.edu/RacerTTests/" width="105%" height="600px" style="border:none"></iframe>
     </div>
-
-	<div id = "mainwrapper" style = "width:75%">
-        
-        <section id = "final-wrapper" style = "line-height:1.65;width:100%;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000;">
-            
-            <h4 style="font-weight:bold">Part 3D: Get Curious <img src="images/DataLiteracy.jpg" width="35" height="32" alt="data literacy icon"/></h4>
-			<h4>1. Assume you are designing an experiment and write out specific protocols that would need to be completed. Make sure that you address all three steps in the <strong>Designing an Experiment</strong> section.</h4>
-			<h4>2. Using your class data, answer the seven questions identified in the <strong>Examining the Data</strong> section.</h4>
-			<h4>3. The game on this page is simplistic. More advanced versions of this game, allowing for numerous types of experiments are available here: and here: What research questions could be addressed with the advanced games that could not be addressed with the simplistic game on this page?</h4>
-			<h4>4. If the data collection was conducted properly, you can use the app to analyze your data. However, if your data was not properly collected, your instructor will provide a cleaned dataset for you. Use the data to conduct a test and make a decision about whether there is a difference in the population average finishing time of the Bayes and Gauss cars.</h4>
-			<ol>
+	<div class = "discussionSection">
+		<section class = "discussionSubsection" >
+            <h4 style="font-weight:bold">Part 3F: Get Curious <img src="images/DataLiteracy.jpg" width="35" height="32" alt="data literacy icon"/></h4>
+			<p>1. Assume you are designing an experiment and write out specific protocols that would need to be completed. Make sure that you address all three steps in the <strong>Designing an Experiment</strong> section.</p>
+			<p>2. Using your class data, answer the seven questions identified in the <strong>Examining the Data</strong> section.</p>
+			<p>3. The game on this page is simplistic. More advanced versions of this game, allowing for numerous types of experiments are available here: and here: What research questions could be addressed with the advanced games that could not be addressed with the simplistic game on this page?</p>
+			<p>4. If the data collection was conducted properly, you can use the app to analyze your data. However, if your data was not properly collected, your instructor will provide a cleaned dataset for you. Use the data to conduct a test and make a decision about whether there is a difference in the population average finishing time of the Bayes and Gauss cars.</p>
+			<ul>
 				<li>a. Provide the test statistic and corresponding p-value</li>
 				<br>
 				<li>b. Give the 95% confidence interval and provide an interpretation</li>
 				<br>
 				<li>c. What conclusions can you draw about your classes experiment? Clearly state your <strong>overall</strong> recommendation to someone wanting to win a race on the oval track.</li>
 				<br>
-			</ol>
-			<h4>5. Does a small p-value guarantee that one type of car will always be faster than the other? Why or why not?</h4>
-			<h4>6. How much do your conclusions depend upon the data cleaning that was done?</h4>
-			<h4>7. Could different response variables (Finish Time vs Top Speed vs Time to 30) result in different conclusions? Why or why not?</h4>
-			<h4>8. Does the hypothesis test or confidence interval provide more helpful information for our study? In particular, does the hypothesis test and p-value provide a good measure of the difference between average car speeds?</h4>
-			<h4>9. If this experiment was repeated, do you expect to get similar results? Do you expect to get identical results</h4>
-			<ol>
+			</ul>
+			<p>5. Does a small p-value guarantee that one type of car will always be faster than the other? Why or why not?</p>
+			<p>6. How much do your conclusions depend upon the data cleaning that was done?</p>
+			<p>7. Could different response variables (Finish Time vs Top Speed vs Time to 30) result in different conclusions? Why or why not?</p>
+			<p>8. Does the hypothesis test or confidence interval provide more helpful information for our study? In particular, does the hypothesis test and p-value provide a good measure of the difference between average car speeds?</p>
+			<p>9. If this experiment was repeated, do you expect to get similar results? Do you expect to get identical results</p>
+			<ul>
 				<li>a. Emphasize the difference between sample statistics and population parameters.</li>
 				<li>b. Talk about having a different sample of players.</li>
 				<li>c. What exactly is the population for this study? Did we collect a true simple random sample?</li>
-			</ol>
-			<h4>10. If our p-value is large, can we be confident that the average finish times are the same for both cars?d</h4>
+			</ul>
+			<p>10. If our p-value is large, can we be confident that the average finish times are the same for both cars?d</p>
 			<iframe src = "https://shiny.grinnell.edu/ghchallengescores/" width = "900px"  style = "border:none;padding-right:10%;padding-bottom:50px;padding-left:10%; height:650px"> </iframe>
 		</section>
-        </div>
-
-	<div id = "mainwrapper" style = "width:75%">
-        
-        <section id = "mainContent" style = "line-height:1.65;width:95%;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000;">	
-            
-            <h4 style="font-weight:bold;margin-left:40px">Part 3E: Data Literacy Breakdown  <img src="images/DataLiteracy.jpg" width="35" height="32" alt="data literacy icon"/></h4>
-			<h4 style="margin-left:40px">1. Watch the video entitled Deception at <a href="https://www.youtube.com/watch?v=eV9dcAGaVU8">Duke</a>. Discuss how this Racer Lab is related to the errors discussed in this video.</h4>
-			<h4 style="margin-left:40px">2. Read the brief article discussing the <a href="https://amstat.tandfonline.com/doi/pdf/10.1080/00031305.2016.1154108?needAccess=true">ASA’s statement</a> on statistical significance and p-values. Pick one of the six principles and write one to two paragraphs discussing how this principle relates to this Racer Lab activity. More than one of the principles can apply to this lab.</h4>
-			<h4 style="margin-left:40px">3. Read the article discussing <a href="https://www.nytimes.com/2017/10/18/magazine/when-the-revolution-came-for-amy-cuddy.html">Amy Cuddy’s research</a>. Discuss how this Racer Lab is related to the errors discussed in this article.</h4>
+		
+		<section class = "discussionSubsection" >	
+            <h4 style="font-weight:bold;margin-left:40px">Part 3G: Data Literacy Breakdown  <img src="images/DataLiteracy.jpg" width="35" height="32" alt="data literacy icon"/></h4>
+			<p style="margin-left:40px">1. Watch the video entitled Deception at <a href="https://www.youtube.com/watch?v=eV9dcAGaVU8">Duke</a>. Discuss how this Racer Lab is related to the errors discussed in this video.</p>
+			<p style="margin-left:40px">2. Read the brief article discussing the <a href="https://amstat.tandfonline.com/doi/pdf/10.1080/00031305.2016.1154108?needAccess=true">ASA’s statement</a> on statistical significance and p-values. Pick one of the six principles and write one to two paragraphs discussing how this principle relates to this Racer Lab activity. More than one of the principles can apply to this lab.</p>
+			<p style="margin-left:40px">3. Read the article discussing <a href="https://www.nytimes.com/2017/10/18/magazine/when-the-revolution-came-for-amy-cuddy.html">Amy Cuddy’s research</a>. Discuss how this Racer Lab is related to the errors discussed in this article.</p>
         </section>
         </div>
-
-	<div id = "mainwrapper" style = "width:75%; height: auto">
-		
-	<div class="partsButton" style="width:50%;margin-left:25%" href="stories.html">Explore Other Stories</div>
-		
+	<br><br><br>
+	<a href="stories.html"><div class="partsButton" style="width:50%;margin-left:25%">Explore Other Stories</div></a>
+	<br><br>
  <div class="junkdrawer" style="padding-left:10%">
         <section id="Data Stories" class="lowMenu">
             <h3 class="highMenu">Data Stories</h3>

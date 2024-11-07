@@ -8,16 +8,19 @@
 <link href="css/Style1.css" rel="stylesheet" type="text/css">
 <link rel="icon" type="image/x-icon" href="images/MapLogo.ico">
 </head>
-	
 		<div id="nav-wrapper"> 
 	    <!--**************************************************************************
     Header starts here. It contains Logo and 7 navigation links. 
     ****************************************************************************-->
    		<nav>
 	    	<a href = "https://www.grinnell.edu"> <img  src="images/MapLogoBg.png" alt="logo" width = "50" height = "40" style = "padding: 16px"> </a> 
-	   		<a style = "color:white;font-size:25px; padding-top: 16px; padding-right: 600px; font-family:'Oswald'" href="index.html"> Dataspace by DASIL </a>
-	   <div class = "dropdown" style = "float:left;padding-top:15px;padding-right:14px">
-	   		<button class = "dropbtn" href="stories.html"> Stories </button>
+	   		<a style = "color:white;font-size:25px; padding-top: 16px; font-family:'Oswald';padding-right:550px" href="index.html"> Dataspace by DASIL </a>
+		<div class = "dropdownContainer">
+		<div class = "dropdown">
+	   		<a href="index.html"><button class = "dropbtn" > Home </button></a>
+		</div>
+	   <div class = "dropdown">
+	   		<a href="stories.html"><button class = "dropbtn" href="stories.html"> Stories </button></a>
 		   		<div class = "dropdown-content">
 					<div class = "dropdown" style="float:left; padding-top:15px; padding-right:14px">
 						<a class="dropbtn" href="brexit1.html">Brexit</a>
@@ -28,8 +31,8 @@
                     </div>
 	   			</div>
 	   </div>
-			<div class = "dropdown" style = "float:left;padding-top:15px;padding-right:14px" >
-	   			<button class = "dropbtn" > Games </button>
+			<div class = "dropdown">
+	   			<a href="games.html"><button class = "dropbtn" > Games </button></a>
 		   		<div class = "dropdown-content">
 					<div class = "dropdown" style="float:left; padding-top:15px; padding-right:14px">
 						<a class="dropbtn" href="coffeetruck1.html">Coffee Truck</a>
@@ -40,15 +43,14 @@
                     </div>
 	   			</div>
 	   		</div>
-	   <div class = "dropdown" style = "float:left;padding-top:15px" >
-	   		<button class = "dropbtn" > Resources </button>
+	   <div class = "dropdown">
+	   		<a href=resources.html><button class = "dropbtn" > Resources </button></a>
 	   			<div class = "dropdown-content">
-		   			<a href = "../../Downloads/brexit/racer1.html">Datasets</a>
-		   			<a href = "../../Downloads/brexit/greenhouse1.html">DASIL Lab</a>
-		  			<a href = "../../Downloads/brexit/statsgrounded1.html">Student Guide</a>
-		  			<a href = "../../Downloads/brexit/statsgrounded1.html">Faculty Guide</a>
+		   			<a href = "datasets.html">Datasets</a>
+		   			<a href = "https://dasil.sites.grinnell.edu/">DASIL Lab</a>
 		   		</div>
 	   </div>
+	</div>
 	</nav>
     </div>
 <body>
@@ -63,12 +65,12 @@
 			<div class="partsButton" href="brexit2.html" style="width:100%">MODULE 2</div>
 		</div>
 		<div class="flex-container">
-			<div class="partsButton" href="https://drive.google.com/drive/folders/1grDXTeyUgUaD2i9dIYgE9ykQcQ4nrtTN" style="width:200%">HANDOUTS</div>
+			<a href="https://drive.google.com/drive/folders/1grDXTeyUgUaD2i9dIYgE9ykQcQ4nrtTN"><div class="partsButtonOne" >HANDOUTS</div></a>
 		</div>
 		<article class = "TitleInfo" style = "width:100%;padding-top:50px">
 			<hr>
-			<h1 style = "color:black;font-size:36px;font-family:'Oswald';text-align:center">Exploring BREXIT attitudes using Anti-Immigrant sentiment</h1>
-			<h4 style="text-align:center">A longitudinal Analysis using Panel Data from the British Election Study</h4>
+			<h1 class="title">Exploring BREXIT attitudes using Anti-Immigrant sentiment</h1>
+			<h4 class="titleContributors">A longitudinal Analysis using Panel Data from the British Election Study</h4>
 			<hr>
 			<br>
 		</article>
@@ -90,15 +92,17 @@
 			<iframe src="https://shiny.grinnell.edu/brexit/" width="1000px" height="800px" style="border: none;margin-left:15%"></iframe>
 		</div>
 	
-	<div id = "SecondSectionwrapper" style = "width:100%;height:61rem">
-		<div style = "width:25%;float:left">
-			<iframe src="https://www.stat2games.sites.grinnell.edu/dataspaceForms/brexit1.php" width="100%" height="750"></iframe>
-			</div>
+	<div id="second-wrapper">
 			<h4>The figure on top displays the proportion of people who preferred to "stay" versus "leave" in England. Consistently the proportion of "leavers" remained above .50 after the UK notified the EU of its decision to leave. Interestingly the percentage increased considerably after the UK's final withdrawal from the EU. The second figure shows the same results for the country of Scotland. Results mainly showed that the percentage of Scots supporting the option to "stay" (or remain in the EU) was above .60. Only recently has the proportion of "leavers" increased considerably in Scotland. The results in the third figure for the country of Wales shows a convergence of the two positions (especially after the UK notified of its withdrawl from the EU). As in the case of England, Welsh respondents show a higher proportion of leavers compared to stayers. Immediately after final withdrawal of the UK from the EU, the proportion of leavers increased throughout the countries forming the UK. One could conclude that when the deal finally materialized, a significant proportion of respondents embraced the status quo, i.e. staying out of the E.U. In other words, stayers (now rejoiners) have decreased in this new institutional environment.</h4>
 	</div>
-
-	</div>	
-	<div class="partsButton" style="width:50%;margin-left:25%" href="brexit2.html">Continue to Part 2</div>
+	<br><br>
+	<div class = "discussionSection">
+		<section class = "discussionSubsection" >
+			<iframe src="https://www.stat2games.sites.grinnell.edu/dataspaceForms/brexit1.php" width="100%" height="1000px"></iframe>
+		</section>
+	</div>
+	<br><br><br><br>
+	<a href="brexit2.html"><div class="partsButton" style="width:50%;margin-left:25%">Continue to Part 2</div></a>
 	
 	<h2>&nbsp;</h2>
 	<section style = "width:100%; overflow:hidden">

@@ -8,8 +8,7 @@
 <link href="css/Style1.css" rel="stylesheet" type="text/css">
 <link rel="icon" type="image/x-icon" href="images/MapLogo.ico">
 </head>
-	
-		<div id="nav-wrapper"> 
+			<div id="nav-wrapper"> 
 	    <!--**************************************************************************
     Header starts here. It contains Logo and 7 navigation links. 
     ****************************************************************************-->
@@ -47,10 +46,8 @@
 	   <div class = "dropdown">
 	   		<a href=resources.html><button class = "dropbtn" > Resources </button></a>
 	   			<div class = "dropdown-content">
-		   			<a href = "../../Downloads/brexit/racer1.html">Datasets</a>
-		   			<a href = "../../Downloads/brexit/greenhouse1.html">DASIL Lab</a>
-		  			<a href = "../../Downloads/brexit/statsgrounded1.html">Student Guide</a>
-		  			<a href = "../../Downloads/brexit/statsgrounded1.html">Faculty Guide</a>
+		   			<a href = "datasets.html">Datasets</a>
+		   			<a href = "https://dasil.sites.grinnell.edu/">DASIL Lab</a>
 		   		</div>
 	   </div>
 	</div>
@@ -71,8 +68,8 @@
 			</div>
 		<article class = "TitleInfo" style = "width:100%;padding-top:50px">
 			<hr>
-			<h1 style = "color:black;font-size:36px;font-family:'Oswald';text-align:center">Are you Pychic?</h1>
-			<h4 style="text-align:center">Understanding p-values in research studies</h4>
+			<h1 class = "title">Are you Pychic?</h1>
+			<h4 class="subTitle">Understanding p-values in research studies</h4>
 			<p style="font-style:italic;margin: 0 auto; text-align:center">Contributors: Shonda Kuiper, DASIL</p>
 			<hr>
 			<br>
@@ -83,7 +80,7 @@
 		<aside id="rightcontent" style = "width:100%">		
 			<br><br><br><br><br>
 			<h3> <strong style = "font-size: 20px; padding-right: 10px; margin-left:-20%">Fun Fact:</strong><img src="images/FunFact.png" width="38" height="28" alt="fun fact icon"/></h3>
-			<h4 style="width:100%;font-size:16px;margin-left:-3%"> Zener Cards were designed in the early 1930s by a psychologist Karl Zener to test "sixth sense" abilities</h4> </aside>
+			<h4 class="funFact"> Zener Cards were designed in the early 1930s by a psychologist Karl Zener to test "sixth sense" abilities</h4> </aside>
 	</section>
 	
 	<div id="second-wrapper">
@@ -147,17 +144,14 @@
 	  <iframe src = "https://shiny.grinnell.edu/psychic1/" width="105%" height="1000px" style = "border:none"></iframe>
   </div>
 		
-	<div id = "mainwrapper" style = "width:75%; height: auto">
-		
-		<section id = "mainContent" style = "line-height:1.65;width:95%;height:auto;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000">
+	<div class = "discussionSection">
+		<section class = "discussionSubsection" >
 		  <iframe src =  "https://www.stat2games.sites.grinnell.edu/dataspaceForms/psychic1.php" width = "100%" height = "1000px" style = "border:none;padding-right:15px;padding-bottom: 1px"></iframe>
 		</section>
 		
-        <div id = "mainwrapper" style = "width:100%">
-            <section id = "mainContent" style = "line-height:1.65;width:95%;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000;margin-top:50px">
-                
+		<section class = "discussionSubsection" >
                 <h3>Part E: Psychic Challenge <img src="images/Challenge.jpg" width="35" height="38" alt="challenge icon"/></h3>
-                <p>The above activity can be used to explain the core ideas behind all statistical hypothesis tests. Hypothesis testing is a process used to determine whether an event can reasonably be attributed to chance or whether there is some other explanation</p>
+                <h4>The above activity can be used to explain the core ideas behind all statistical hypothesis tests. Hypothesis testing is a process used to determine whether an event can reasonably be attributed to chance or whether there is some other explanation</h4>
 				<br>
                 <p>For example, let’s assume your friend, Akilah, claims to be psychic and you decide to test this claim using a test similar to the one above. There are 
                 two possible conclusions we can make.</p>
@@ -176,16 +170,8 @@
                 <p>However, a p-value never proves that our alternative hypothesis is true, it simply tells us how unlikely the null hypothesis is when only random chance is 
                 involved. Remember that a p-value = 0.01 means that 1 out of 100 times someone will correctly guess 6 or more cards just by random chance even when the null 
                 hypothesis is true.</p>
-				
-			<iframe style="float:center;border:none" src="https://shiny.grinnell.edu/dataspace/GHLevel1HighScores/" width="100%" height="450px"></iframe>
-            </section>
-            </div>
-    
-    		<br><br>
-	<div id = "mainwrapper" style = "width:100%">
-		
-		<section id = "mainContent" style = "line-height:1.65;width:95%;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000">
-			
+		</section>
+		<section class = "discussionSubsection" >
 			<h3>Part F: Get Curious  <img src="images/GetCurious.jpg" width="35" height="32" alt="get curious icon"/></h3>
             <h4>1. How did your class do? Sometimes it can take up to 60 minutes for your class data to show in the App above. After your instructor confirms enough class data is available, answer the following questions.</h4>
 				<ol>
@@ -244,9 +230,8 @@
 
 		<br>
 	</div>	
-	<div class="partsButton" style="width:50%;margin-left:25%" href="stories.html">Explore Other Stories</div>
-	
-	<h2>&nbsp;</h2>
+	<a href="stories.html"><div class="partsButton" style="width:50%;margin-left:25%">Explore Other Stories</div></a>
+	<br><br>
 	<section style = "width:100%; overflow:hidden">
 	<hr>
 	<hr>

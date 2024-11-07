@@ -8,16 +8,20 @@
 <link href="css/Style1.css" rel="stylesheet" type="text/css">
 <link rel="icon" type="image/x-icon" href="images/MapLogo.ico">
 </head>
-	
+		
 		<div id="nav-wrapper"> 
 	    <!--**************************************************************************
     Header starts here. It contains Logo and 7 navigation links. 
     ****************************************************************************-->
    		<nav>
 	    	<a href = "https://www.grinnell.edu"> <img  src="images/MapLogoBg.png" alt="logo" width = "50" height = "40" style = "padding: 16px"> </a> 
-	   		<a style = "color:white;font-size:25px; padding-top: 16px; padding-right: 600px; font-family:'Oswald'" href="index.html"> Dataspace by DASIL </a>
-	   <div class = "dropdown" style = "float:left;padding-top:15px;padding-right:14px">
-	   		<button class = "dropbtn" href="stories.html"> Stories </button>
+	   		<a style = "color:white;font-size:25px; padding-top: 16px; font-family:'Oswald';padding-right:550px" href="index.html"> Dataspace by DASIL </a>
+		<div class = "dropdownContainer">
+		<div class = "dropdown">
+	   		<a href="index.html"><button class = "dropbtn" > Home </button></a>
+		</div>
+	   <div class = "dropdown">
+	   		<a href="stories.html"><button class = "dropbtn" href="stories.html"> Stories </button></a>
 		   		<div class = "dropdown-content">
 					<div class = "dropdown" style="float:left; padding-top:15px; padding-right:14px">
 						<a class="dropbtn" href="brexit1.html">Brexit</a>
@@ -28,8 +32,8 @@
                     </div>
 	   			</div>
 	   </div>
-			<div class = "dropdown" style = "float:left;padding-top:15px;padding-right:14px" >
-	   			<button class = "dropbtn" > Games </button>
+			<div class = "dropdown">
+	   			<a href="games.html"><button class = "dropbtn" > Games </button></a>
 		   		<div class = "dropdown-content">
 					<div class = "dropdown" style="float:left; padding-top:15px; padding-right:14px">
 						<a class="dropbtn" href="coffeetruck1.html">Coffee Truck</a>
@@ -40,15 +44,14 @@
                     </div>
 	   			</div>
 	   		</div>
-	   <div class = "dropdown" style = "float:left;padding-top:15px" >
-	   		<button class = "dropbtn" > Resources </button>
+	   <div class = "dropdown">
+	   		<a href=resources.html><button class = "dropbtn" > Resources </button></a>
 	   			<div class = "dropdown-content">
-		   			<a href = "../../Downloads/brexit/racer1.html">Datasets</a>
-		   			<a href = "../../Downloads/brexit/greenhouse1.html">DASIL Lab</a>
-		  			<a href = "../../Downloads/brexit/statsgrounded1.html">Student Guide</a>
-		  			<a href = "../../Downloads/brexit/statsgrounded1.html">Faculty Guide</a>
+		   			<a href = "datasets.html">Datasets</a>
+		   			<a href = "https://dasil.sites.grinnell.edu/">DASIL Lab</a>
 		   		</div>
 	   </div>
+	</div>
 	</nav>
     </div>
 <body>
@@ -63,12 +66,12 @@
 			<div class="partsButton" href="brexit2.html" style="background:#418fde;width:100%">MODULE 2</div>
 		</div>
 		<div class="flex-container">
-			<div class="partsButton" href="https://drive.google.com/drive/folders/1grDXTeyUgUaD2i9dIYgE9ykQcQ4nrtTN" style="width:200%">HANDOUTS</div>
+			<a href="https://drive.google.com/drive/folders/1grDXTeyUgUaD2i9dIYgE9ykQcQ4nrtTN"> <div class="partsButtonOne">HANDOUTS</div></a>
 		</div>
 		<article class = "TitleInfo" style = "width:100%;padding-top:50px">
 			<hr>
-			<h1 style = "color:black;font-size:36px;font-family:'Oswald';text-align:center">Who were the citizens more likely to vote for Brexit?</h1>
-			<h4 style="text-align:center">Key predictors explaining Brexit: Age, Education and Socioeconomic Index</h4>
+			<h1 class="title">Who were the citizens more likely to vote for Brexit?</h1>
+			<h4 class="titleContributors">Key predictors explaining Brexit: Age, Education and Socioeconomic Index</h4>
 			<hr>
 			<br>
 		</article>
@@ -76,9 +79,10 @@
 	
 
 	<section id = "rightContent">
-		<aside id="rightcontent" style = "width:100%">		
-			<h3> <strong style = "font-size: 20px; padding-right: 10px; margin-left:-20%">Claims:</strong><img src="images/FunFact.png" width="38" height="28" alt="fun fact icon"/></h3>
-			<h4 style="width:100%;font-size:16px;margin-left:-3%;font-weight:normal"> Brexit vote fundamentally altered the ability and opportunities of British citizens to work and seek employment in the EU. Highly educated voters were more likely to vote Remain than respondents with lower levels of Education who were more likely to vote for Brexit. Respondents with higher Socioeconomic status were more likely to vote Remain than voters with lower socioeconomic status who were more likely to vote Brexit.</aside>
+		<aside id="rightcontent" style = "width:100%">	
+			<br><br><br><br><br><br>
+			<h3> <strong style = "font-size: 20px; padding-right: 10px; margin-left:-20%">Fun Fact:</strong><img src="images/FunFact.png" width="38" height="28" alt="fun fact icon"/></h3>
+			<h4 class="funFact"> Brexit vote fundamentally altered the ability and opportunities of British citizens to work and seek employment in the EU. Highly educated voters were more likely to vote Remain than respondents with lower levels of Education who were more likely to vote for Brexit. Respondents with higher Socioeconomic status were more likely to vote Remain than voters with lower socioeconomic status who were more likely to vote Brexit.</aside>
 	</section>
 	
 	<div id="second-wrapper">
