@@ -62,14 +62,14 @@
         	<div class="overlay" style = "padding-top:150%;padding-left:200%;font-weight:bold;font-size:60px;padding-top:10px; margin-top:-100px;position:absolute;color:white">RACER</div>
    		</div>
 		<div class="flex-container">
-			<div class="partsButton" href="racer1.html">MODULE 1</div>
-			<div class="partsButton" href="racer1.html">MODULE 2</div>
-			<div class="partsButton" href="racer1.html" style="background:#418fde">MODULE 3</div>
+			<a href="racer1.html"><div class="partsButton">MODULE 1</div></a>
+			<a href="racer2.html"><div class="partsButton">MODULE 2</div></a>
+			<a href="racer3.html"><div class="partsButton" style="background:#418fde">MODULE 3</div></a>
 		</div>
 		<div class="flex-container">
-			<div class="partsButton" href="https://stat2games.sites.grinnell.edu/Racer%20Game%20Instructions.pdf">INSTRUCTIONS</div>
-			<div class="partsButton" href="https://stat2games.sites.grinnell.edu/data/racekartb/racekartb.php">GAME DATA</div>
-			<div class="partsButton" href="https://stat2labs.sites.grinnell.edu/racer.html">HANDOUTS</div>
+			<a href="https://stat2games.sites.grinnell.edu/Racer%20Game%20Instructions.pdf"><div class="partsButton">INSTRUCTIONS</div></a>
+			<a href="https://stat2games.sites.grinnell.edu/data/racekartb/racekartb.php"><div class="partsButton">GAME DATA</div></a>
+			<a href="https://stat2labs.sites.grinnell.edu/racer.html"><div class="partsButton">HANDOUTS</div></a>
 		</div>
 		<article class = "TitleInfo" style = "width:100%;padding-top:50px">
 			<hr>
@@ -127,7 +127,24 @@
 			<li>Then click the <strong>START</strong> button.</li>
 			<li>Use the arrow keys to race the car.</li>
 		</ol>
-			<section style="width:100%; height:auto;">
+		
+			<section id = "leftContent" style = "width:25%;float:left;height:200px;text-align:center;line-height: 1.7;margin-top:-250px">
+			<div style = "width:80%;float:left;color:Black;font-size: 18px; text-align: left; margin-left:5%">
+			<p> <strong>Figure 1:</strong> Enter your PlayerID and GroupID</p>
+			<img src="images/racerInstruction1.png" alt="Enter your PlayerID and GroupID" width="100%" >
+		
+			<p> <strong>Figure 2:</strong> Select your car and customize it</p>
+	 		<img src="images/racerInstruction2.png" alt="Select your car and customize it" width="100%" >
+				
+			<p> <strong>Figure 3:</strong> Choose the track</p>
+			<img src="images/racerInstruction3.png" alt="Choose the track" width="100%" >
+		
+			<p> <strong>Figure 4:</strong> Race on your vehicle!</p>
+	 		<img src="images/racerInstruction4.png" alt="settings to generate data" width="100%" >
+			</div>
+			</section>
+		
+			<section style="width:75%; height:auto;margin-left:25%">
 				<iframe src="https://www.stat2games.sites.grinnell.edu/games/raceradvanced22.html" style= "width:100%; height: 700px; border:none"></iframe>
 			</section>
 	</div>
@@ -215,63 +232,58 @@
 	<br><br><br>
 	<a href="stories.html"><div class="partsButton" style="width:50%;margin-left:25%">Explore Other Stories</div></a>
 	<br><br>
- <div class="junkdrawer" style="padding-left:10%">
-        <section id="Data Stories" class="lowMenu">
-            <h3 class="highMenu">Data Stories</h3>
-            <br>
-            <a href="nypd1.html" class="lowMenu">NYPD</a>
-            <br>
-            <br>
-            <a href="covid1.html" class="lowMenu">Covid-19</a>
-            <br>
-            <br>
-            <a href="recidivism1.html" class="lowMenu">Recidivism</a>
-            <br>
-            <br>
-            <a href="brexit1.html" class="lowMenu">Brexit</a>
-            <br>
-            <a href="psychic1.html" class="lowMenu">Psychic</a>
-            <br>
-        </section>
-        <section id="Stats Games" class="lowMenu" style="padding-left:30px;">
-            <h3 class="highMenu">Stats Games</h3>
-            <br>
-            <a href="racer1.html" class="lowMenu">Racer</a>
-            <br>
-            <br>
-            <a href="greenhouse1.html" class="lowMenu">Greenhouse</a>
-            <br>
-            <br>
-            <a href="statsgrounded1.html" class="lowMenu">Statistically Grounded</a>
-        </section>
-        <section id="Useful Links" class="lowMenu" style="padding-left:30px;">
-            <h3 class="highMenu">Other Links</h3>
-            <br>
-            <a href="index.html" class="lowMenu">Homepage</a>
-            <br>
-            <br>
-            <a href="https://dasil.sites.grinnell.edu/" class="lowMenu">Dasil Lab</a>
-            <br>
-            <br>
-            <a href="references.html" class="lowMenu">Faculty Resources</a>
-            <br>
-            <br>
-            <a href="datasets.html" class="lowMenu">Datasets</a>
-        </section>
-        <section id="Email and Questions" class="lowMenu" style="padding-left:150px; width:20%;">
-            <h3 class="highMenu">Questions?</h3>
-            <br>
-            <p>
-                If you have any questions or comments, please email us at 
-                <a href="mailto:DASIL@grinnell.edu" style="color:blue">DASIL@grinnell.edu</a>
-            </p>
-        </section>
-    </div>
+	<div class = "junkdrawer"  style = "padding-left:10%">
+		<section id = "Data Stories" class="lowMenu" style = "float:left;margin-top:40px">
+		<a href="stories.html"><h3 class="highMenu"> Data Stories </h3></a>
+			<br>
+			<a href = "nypd1.html" class="lowMenu"> NYPD</a>
+			<br>
+			<a href = "covid1.html" class="lowMenu"> Covid-19 </a>  
+			<br>
+			<a href = "recidivism1.html" class="lowMenu"> Recidivism</a>
+			<br>
+			<a href = "brexit1.html" class="lowMenu"> Brexit</a>
+			<br>
+			
+		</section>
+		<section id = "Stats Games" class="lowMenu" style = "float:left;padding-left:30px;margin-top:40px">
+		<a href="games.html"><h3 class="highMenu"> Stats Games </h3></a>
+			<br>
+			<a href = "racer1.html" class="lowMenu"> Racer</a>
+			<br>
+			<a href = "greenhouse1.html" class="lowMenu"> Greenhouse</a>
+			<br>
+			<a href = "statsgrounded1.html" class="lowMenu"> Statistically Grounded</a>
+			<br>
+			<a href = "psychic1.html" class="lowMenu"> Psychic</a>
+
+		</section>
+		
+		<section id = "Useful Links" class="lowMenu" width = "25%" style = "float:left;padding-left:30px;margin-top:40px">
+		<h3 class="highMenu"> Other Links </h3>
+			<br>
+			<a href = "index.html" class="lowMenu"> Homepage</a>
+			<br>
+			<a href = "datasets.html" class="lowMenu"> Handouts</a>
+			<br>
+			<a href = "https://dasil.sites.grinnell.edu/" class="lowMenu"> Dasil Lab</a>
+			<br>
+			<a href = "references.html" class="lowMenu"> Resources</a>
+		</section>
+		<section id = "Email and Questions" class="lowMenu" style = "float:left;padding-left:250px; width:20%;margin-top:40px">
+			<h3 class="highMenu"> Questions? </h3>
+			<br>
+			<p>
+			If you have any questions or comments, please email us at <a href = "mailto: DASIL@grinnell.edu" style = "color:blue"> DASIL@grinnell.edu</a>
+			</p>
+			
+		</section>
+</div>
 	</section>
 		
 		<section style="width:100%; float:left; text-align: center">
 			<p> Dataspace is supported by the Grinnell College Innovation Fund and was developed by Grinnell College faculty and students. Copyright &copy; 2021. All rights reserved</p>
-			<p> This page was last updated on&nbsp; June 26th&nbsp; 2024.</p>
+			<p> This page was last updated on&nbsp; November 11th&nbsp; 2024.</p>
 		</section>
 	
 	</body>

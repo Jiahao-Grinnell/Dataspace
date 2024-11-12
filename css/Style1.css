@@ -173,13 +173,6 @@ a {color: black}
     width: 300px; /* Adjust as needed */
 }
 
-#picture :hover{
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-
-
 .besides-image {
     display: block;
     width: 100px;
@@ -221,8 +214,9 @@ a {color: black}
 }
 
 .flex-container {
-    display: flex;
-    align-items: flex-start; /* Align items at the start */
+    display:flex;
+    align-items: center; /* Align items at the start */
+	width:100%;
 }
 
 .overlay-button {
@@ -496,11 +490,28 @@ a {color: black}
 }
 
 .discussionSubsection li{
-	margin-left:3%;
+	margin-left:10%;
+	margin-right:3%;
+	font-weight:normal;
 }
 
 .discussionSubsection p{
 	font-weight: normal;
+	margin-left:5% ; /* margin: top-down left-right*/
+	margin-right:3%;
+}
+
+.discussionSubsection h4{ /* regular non-bold*/
+	font-weight: normal;
+	margin-left:3%;
+	margin-right:3%;
+}
+
+.discussionSubsection h3{ /* bold heading */
+	font-weight: bold;
+	font-size:20px;
+	margin-left:3%;
+	margin-right:3%;
 }
 
 .funFact{
@@ -508,6 +519,15 @@ a {color: black}
 	font-size:16px;
 	margin-left:-3%;
 	font-weight: 400;
+}
+
+.storiesBlockText{
+	width: 220px;
+	height:220px;
+	display:none;
+	margin-top:-50px;
+	font-size:20px;
+	text-align:left;
 }
 
 table{
@@ -648,20 +668,30 @@ h2{
 	font-size: 36px;
 }
 
+/*  --- replaced in discussionSection h3 --- if needed uncomment
 h3{
 	color: black;
 	margin:30px;
 	font-weight: normal;
 	font-size: 25px;
 }
-
+*/
 .lowMenu{
 	color:white;
 	font-size:20px;
+	text-decoration:none;
+	
+	
 }
+
 .highMenu{
 	color:white;
-	font-size:35px;
+	font-size:30px;
+}
+
+.lowMenu :hover, .highMenu :hover{
+	color: #418fde;
+	text-decoration: none;
 }
 .samples{
 	width: 100px;
@@ -828,10 +858,7 @@ footer {
 	width: 80%;
 	text-align: center;
 }
-#content #mainContent h3 {
-	/* Title under maincontent, if any */
-	font-size: 14px;
-}
+
 #content footer article {
 	/* Each foter article */
 	width: 96%;
@@ -905,7 +932,7 @@ nav a {
 .junkdrawer {
 	width: 100%;
 	font-family: 'Oswald';	
-	background-image: url("../images/blue.jpg"); 
+	background-image: url("../images/bgMain.jpg"); 
 	height: 23rem;
 }
 
