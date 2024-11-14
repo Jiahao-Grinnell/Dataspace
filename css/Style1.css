@@ -310,7 +310,7 @@ a {color: black}
 }
 
 .blackCover{
-	background:rgba(0, 0, 0, 0.8);
+	background:rgba(0, 0, 0, 0.7);
 	height:200px;
 	width:100%;
 	margin-top:100px;
@@ -436,7 +436,7 @@ a {color: black}
 
 .qrCodeBlock{
 	background: #418fde;
-	width:75%;
+	width:70%;
 	border:10px;
 	border-color: white;
 	height:40px;
