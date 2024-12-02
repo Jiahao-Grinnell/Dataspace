@@ -57,11 +57,13 @@
 <body>
 	
 	
-	<div id = "mainwrapper" style = "width:75rem">
-		<div class="blackCover"></div>
-	 	<img src = "images/greenhouseLong.png" style = "height:200px; width:100%;display:block;padding-top:100px" alt = "police">
-		<div class="container">
-        	<div class="overlay" style = "padding-top:150%;padding-left:200%;font-weight:bold;font-size:60px;padding-top:10px; margin-top:-100px;position:absolute">GREENHOUSE</div>
+	<div id = "mainwrapper" style = "width:100%">
+		<div class="flex-container">
+			<div class="blackCover"></div>
+	 		<img src = "images/greenhouseLong.png" class="topImage" alt="greenhouse">
+        	<div class="overlay">
+				<div class="topTextModule">GREENHOUSE</div>
+			</div>
    		</div>
 		<div class="flex-container">
 			<a href="greenhouse1.html"> <div class="partsButton">MODULE 1</div></a>
@@ -73,32 +75,46 @@
 			<a href="https://stat2games.sites.grinnell.edu/data/greenhouse/greenhouse.php"> <div class="partsButton">CODAPP</div></a>
 			<a href="https://drive.google.com/drive/folders/1grDXTeyUgUaD2i9dIYgE9ykQcQ4nrtTN"> <div class="partsButton">HANDOUTS</div></a>
 		</div>
-		<article class = "TitleInfo" style = "width:100%;padding-top:50px">
+		
+		<!-- standard break between Greenhouse tiles menu and title -->
+		<br><br><br>
+		
+		<article class = "TitleInfo" style="width:100%;margin-left:-1.8%">
 			<hr>
 			<h1 class="title">Exploring Your Class Data to Grow the Best Crops</h1>
 			<p class="titleContributors">Contributors: Shonda Kuiper, Anna Olsen, Ginger Rowell, DASIL, Shreyas Agrawal' 24</p>
 			<hr>
-			<br>
 		</article>
 	</div>	
 
-	<section id = "rightContent">
-		<aside id="rightcontent" style = "width:100%">		
-			<br><br><br>
-			<h3> <strong style = "font-size: 20px; padding-right: 10px; margin-left:-20%">Fun Fact:</strong><img src="images/FunFact.png" width="38" height="28" alt="fun fact icon"/></h3>
-			<h4 class="funFact"> Several statistics techniques were originally developed to address agricultural research questions. Click <a href="https://www.stat.iastate.edu/department-history">here</a> to read more!</h4> </aside>
+	<section id = "rightContent">	
+		<br><br><br><br><br><br><br><br><br><br>
+		<h3> <strong>Fun Fact:</strong><img src="images/FunFact.png" width="38" height="28" alt="fun fact icon"/></h3>
+			<h4 class="funFact"> Several statistics techniques were originally developed to address agricultural research questions. Click <a href="https://www.stat.iastate.edu/department-history">here</a> to read more!</h4>
 	</section>
 	
+	<!-- standard break between Greenhouse tiles menu and title -->
+	<br><br><br>
+	
 	<div id="second-wrapper">
-			<div class="partsButton" style="width:50%;margin-left:25%">Part 3A: Introduction</div>
-			<br>
-			<h4>In Part 2 of this Greenhouse lab, we built and compared several regression models using sample data. It was clear that it is often helpful to include more than one explanatory variable in a regression model.</h4>
-			<h4>In this section of the lab, you will use your own class data to create models that will help you win the Greenhouse game.</h4>
-			<br><br><br><br>
-			<div class="partsButton" style="width:50%;margin-left:25%">Part 3B: Exploring Your Own Data</div>
-			<h4>Check your understanding with the <strong>Get Curious</strong> questions below.</h4>
+		<div class="flex-container">
+			<div class="sectionHeader">Part 3A: Introduction</div>
+		</div>
+		<h4>In Part 2 of this Greenhouse lab, we built and compared several regression models using sample data. It was clear that it is often helpful to include more than one explanatory variable in a regression model.</h4>
+		<h4>In this section of the lab, you will use your own class data to create models that will help you win the Greenhouse game.</h4>
+		
+		<!-- standard break between sections-->
+		<br><br><br>
+		<div class="flex-container">
+			<div class="sectionHeader">Part 3B: Exploring Your Own Data</div>
+		</div>
+		<h4>Check your understanding with the <strong>Get Curious</strong> questions below.</h4>
 	</div>
 	
+	<!-- break -->
+	<br>
+	
+	<!--todo: change to settings as they appear in greenhouse1-->
 	<div style = "width:20%;float:left;color:Black;font-size: 14px; margin-top: -10%">
 			<div>		
 				<br><br><br><br><br><br><br><br>
@@ -114,11 +130,11 @@
 				<p style="margin-left: 30px">Ignore other items, such as the Remove Interaction Terms, Nitrate Levels, and X-axis Limits.</p>
 			</div>	
 	</div>
+	
 	<div style = "width:75%;padding-left:3.5%;float:left;margin-bottom:-20%">
 	  <iframe src = "https://shiny.grinnell.edu/dataspace/greenhouse2/" width="100%" height="1000px" style = "border:none"></iframe>	
   	</div>
-
-		
+	
 	<div class = "discussionSection">
 		<section class = "discussionSubsection" >
                 <h4 style="font-weight:bold">Part 3C: Get Curious <img src="images/Challenge.jpg" width="35" height="38" alt="challenge icon"/></h4>
@@ -159,9 +175,15 @@
 			<p>8. Try playing the Farmer Game. It allows you to grow crops and complete numerous other challenges.</p>
 		</section>
 		</div>
-		<br><br><br>	
-	<a href="games.html"><div class="partsButton" style="width:50%;margin-left:25%">Explore Other Games</div></a>
+
+	<!-- standard break between title and first part (Part1A) -->
 	<br><br><br>
+	
+	<a href="games.html"><div class="partsButton" style="width:50%;margin-left:25%">Explore Other Games</div></a>
+
+	<!-- standard break between title and first part (Part1A) -->
+	<br><br><br>
+	
 <section style = "width:100%; overflow:hidden; color:white;">
 	<hr>
 	<hr>

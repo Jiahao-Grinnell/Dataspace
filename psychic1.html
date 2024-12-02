@@ -54,25 +54,29 @@
 	</nav>
     </div>
 <body>
-	<div id = "mainwrapper" style = "width:75rem">
-		<div class="blackCover"></div>
-	 	<img src = "images/Psychic.jpg" style = "height:200px; width:100%;display:block;padding-top:100px" alt = "psychic">
-		<div class="container">
-        	<div class="overlay" style = "padding-top:150%;padding-left:200%;font-weight:bold;font-size:60px;padding-top:10px; margin-top:-100px;position:absolute">PSYCHIC</div>
-   		</div>
+	<div id = "mainwrapper" style = "width:100%">
+		<div class="flex-container">
+			<div class="blackCover"></div>
+	 		<img src = "images/Psychic.jpg" class="topImage" alt = "psychic">
+			<div class="overlay">
+				<div class="topTextModule">PSYCHIC</div>
+   			</div>
+		</div>
 		<div class="flex-container">
 			<a href="psychic1.html"><div class="partsButtonOne" style="background:#418fde">MODULE 1</div></a>
 		</div>
 		<div class="flex-container">
 			<a href="https://www.stat2games.sites.grinnell.edu/data/psychic/psychic.php"><div class="partsButtonOne">GAME DATA</div></a>
-			</div>
-		<article class = "TitleInfo" style = "width:100%;padding-top:50px">
+		</div>
+		
+		<br><br><br>
+		
+		<article class = "TitleInfo" style="width:100%;margin-left:-1.8%;">
 			<hr>
 			<h1 class = "title">Are you Pychic?</h1>
 			<h4 class="subTitle">Understanding p-values in research studies</h4>
 			<p style="font-style:italic;margin: 0 auto; text-align:center">Contributors: Shonda Kuiper, DASIL</p>
 			<hr>
-			<br>
 		</article>
 	</div>	
 
@@ -83,12 +87,18 @@
 			<h4 class="funFact"> Zener Cards were designed in the early 1930s by a psychologist Karl Zener to test "sixth sense" abilities</h4> </aside>
 	</section>
 	
+	<br><br><br>
+	
 	<div id="second-wrapper">
+		<div class="flex-container">
 			<div class="sectionHeader">Part 1A: Introduction</div>
+		</div>
 			<br>
 			<h4>Have you ever felt that you have the ability to know something is true just through intuition? For example, have you ever played a casino game where you won because you correctly guessed the throw of the dice, the right card, or the color on a roulette wheel? If someone wins several times in a row, do they have special skills or are they just lucky? The Psychic Game below will test your ability to predict which card is selected. Your score will be automatically saved, and you can see how well you do compared to others.</h4>
 			<br><br>
+		<div class="flex-container">
 			<div class="sectionHeader">Part 1B: Collecting Data</div>
+		</div>
 			<h4>Here are some key terms that will be recorded during the test:</h4>
 			<li>The game will ask you for a <strong>Player ID</strong>. You can use any name you like, but this will be on the internet, so use a code name that you will remember, but do not use a name that will easily identify you.</li>
 			<li>If you are playing this game for a course, your instructor will provide a <strong>Group ID</strong> so you will be able to compete with everyone in your class.</li>
@@ -97,25 +107,24 @@
 		<br><br>
 	</div>
 	
-
-	<section id = "leftContent" style = "width:25%;float:left;height:2000px;text-align:center;line-height: 1.7">
-	<div style = "width:80%;float:left;color:Black;font-size: 18px; text-align: left; margin-left:5%">
-		<br><br><br><br>
-		<p> <strong>Figure 1:</strong> Settings to start Psychic game</p>
-		<img src="images/psychicBg.png" alt="settings to start game" width="100%" >
-		
-	</div>
-		
-		
+	<section id = "leftContent" style = "width:25%;float:left;height:500px;text-align:center;line-height: 1.7">
+		<div style = "width:80%;float:left;color:Black;font-size: 18px; text-align: left; margin-left:5%">
+			<br><br><br><br>
+			<p> <strong>Figure 1:</strong> Settings to start Psychic game</p>
+		<img src="images/psychicBg.png" alt="settings to start game" width="100%" >	
+		</div>	
 	</section>
-    	
-	  <section style="width:100%; height:auto;margin-left:25%">
-			<iframe src="https://www.stat2games.sites.grinnell.edu/games/psychic.html" style= "margin-left:0%;width:100%; height: 700px; border:none"></iframe>
-		</section>
-		<h4 style="font-style:normal"><strong>NOTE</strong>: If you are unable to play the game, either try a different browser or go to the game website directly 	<a href="https://www.stat2games.sites.grinnell.edu/games/greenhouse.html">here.</a></h4>
-		<hr>
+	
+	<section class="gameView">
+		<iframe class="gameFrame" src="https://www.stat2games.sites.grinnell.edu/games/psychic.html"></iframe>
+	</section>
+	<h4 style="font-style:normal"><strong>NOTE</strong>: If you are unable to play the game, either try a different browser or go to the game website directly 	<a href="https://www.stat2games.sites.grinnell.edu/games/psychic.html">here.</a></h4>
+	<hr><br>
+	
 	<div id="fourth-wrapper">
-		<div class="sectionHeader">Part 1C: Exploring Example Data</div>
+		<div class="flex-container">
+			<div class="sectionHeader">Part 1C: Exploring Example Data</div>
+		</div>
 		<h4>How well did you do at guessing the right card? Before we come to any conclusions, we should carefully consider several questions. For example, if you correctly guessed all 10, does it mean you have special abilities? What can you conclude if you didn’t get any correct? How many does the average person, with no special abilities, get right? How many would you need to correctly guess before we started to suspect there was something more going on than random guessing?</h4>
 		<h4>Before we analyze your data, let's look at a sample dataset from a previous class of students.</h4>
 		<br><br>

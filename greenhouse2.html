@@ -57,12 +57,14 @@
 <body>
 	
 	
-	<div id = "mainwrapper" style = "width:75rem">
-		<div class="blackCover"></div>
-	 	<img src = "images/greenhouseLong.png" style = "height:200px; width:100%;display:block;padding-top:100px" alt = "police">
-		<div class="container">
-        	<div class="overlay" style = "padding-top:150%;padding-left:200%;font-weight:bold;font-size:60px;padding-top:10px; margin-top:-100px;position:absolute">GREENHOUSE</div>
-   		</div>
+	<div id = "mainwrapper" style = "width:100%">
+		<div class="flex-container">
+			<div class="blackCover"></div>
+	 		<img src = "images/greenhouseLong.png" class="topImage">
+        	<div class="overlay">
+				<div class="topTextModule">GREENHOUSE</div>
+			</div>
+		</div>
 		<div class="flex-container">
 			<a href="greenhouse1.html"> <div class="partsButton">MODULE 1</div></a>
 			<a href="greenhouse2.html"> <div class="partsButton" style="background:#418fde">MODULE 2</div></a>
@@ -73,39 +75,48 @@
 			<a href="https://stat2games.sites.grinnell.edu/data/greenhouse/greenhouse.php"> <div class="partsButton">CODAPP</div></a>
 			<a href="https://drive.google.com/drive/folders/1grDXTeyUgUaD2i9dIYgE9ykQcQ4nrtTN"> <div class="partsButton">HANDOUTS</div></a>
 		</div>
-		<article class = "TitleInfo" style = "width:100%;padding-top:50px">
+		
+		<!-- standard break between tile menu and title -->
+		<br><br><br>
+		
+		<article class = "TitleInfo" style="width:100%;margin-left:-1.8%">
 			<hr>
 			<h1 class="title">Using Regression Models to Grow the Best Crops</h1>
 			<p class="titleContributors">Contributors: Shonda Kuiper, Anna Olsen, Ginger Rowell, DASIL, Shreyas Agrawal' 24</p>
 			<hr>
-			<br>
 		</article>
 	</div>	
-
-	<section id = "rightContent">
-		<aside id="rightcontent" style = "width:100%">		
-			<br><br><br><br><br><br>
-			<h3> <strong style = "font-size: 20px; padding-right: 10px; margin-left:-20%">Fun Fact:</strong><img src="images/FunFact.png" width="38" height="28" alt="fun fact icon"/></h3>
-			<h4 class="funFact"> Several statistics techniques were originally developed to address agricultural research questions. Click <a href="https://www.stat.iastate.edu/department-history">here</a> to read more!</h4> </aside>
+	
+	<section id = "rightContent">	
+		<br><br><br><br><br><br><br><br><br><br>
+		<h3> <strong>Fun Fact:</strong><img src="images/FunFact.png" width="38" height="28" alt="fun fact icon"/></h3>
+		<h4 class="funFact"> Several statistics techniques were originally developed to address agricultural research questions. Click <a href="https://www.stat.iastate.edu/department-history">here</a> to read more!</h4>
 	</section>
 	
+	<!-- standard break between title and first part (Part1A) -->
+	<br><br><br>
+	
 	<div id="second-wrapper">
+		<div class="flex-container">
 			<div class="sectionHeader">Part 2A: Introduction</div>
-			<br>
-			<h4>In Part 1 of this lab, we used the Greenhouse game to collect data and reviewed rules for simple linear regression. Recall that the <strong>Greenhouse</strong> game was developed so that the yields (amount of crops produced) follow models that reflect actual crop growth in the United States. Each test plot represents 1/10th of an acre of land and yields are the number of bushels produced on that plot. In this part of the lab, we will build and compare several regression models using sample data.</h4>
-			<h4>We will start by comparing linear, quadratic, and cubic models.</h4>
-			<li>The linear least-squares equation has the form: Ŷ = b<sub>0</sub> + b<sub>1</sub>X  </li>
-			<li>The quadratic least-squares equation has the form: Ŷ = b<sub>0</sub> + b<sub>1</sub>X + b<sub>2</sub>X <sup>2</sup> </li>
-			<li>The cubic least-squares equation has the form: Ŷ = b<sub>0</sub> + b<sub>1</sub>X + b<sub>2</sub>X <sup>2</sup> +  b<sub>3</sub>X <sup>3</sup></li>
+		</div>
+		<h4>In Part 1 of this lab, we used the Greenhouse game to collect data and reviewed rules for simple linear regression. Recall that the <strong>Greenhouse</strong> game was developed so that the yields (amount of crops produced) follow models that reflect actual crop growth in the United States. Each test plot represents 1/10th of an acre of land and yields are the number of bushels produced on that plot. In this part of the lab, we will build and compare several regression models using sample data.</h4>
+		<h4>We will start by comparing linear, quadratic, and cubic models.</h4>
+		<li>The linear least-squares equation has the form: Ŷ = b<sub>0</sub> + b<sub>1</sub>X  </li>
+		<li>The quadratic least-squares equation has the form: Ŷ = b<sub>0</sub> + b<sub>1</sub>X + b<sub>2</sub>X <sup>2</sup> </li>
+		<li>The cubic least-squares equation has the form: Ŷ = b<sub>0</sub> + b<sub>1</sub>X + b<sub>2</sub>X <sup>2</sup> +  b<sub>3</sub>X <sup>3</sup></li>
+		<h4>We will then consider the use of models with interaction terms.</h4>
+		<li>A least-squares equation with two explanatory variables and no interaction term has the form: Ŷ = b<sub>0</sub> + b<sub>1</sub>X<sub>1</sub> + b<sub>2</sub>X<sub>2</sub> </li>
+        <li>A least-squares equation with an interaction term has the form: Ŷ = b<sub>0</sub> + b<sub>1</sub>X<sub>1</sub> + b<sub>2</sub>X<sub>2</sub> + b<sub>3</sub>X<sub>1</sub>X<sub>2</sub></li>
 		
-			<h4>We will then consider the use of models with interaction terms.</h4>
-			<li>A least-squares equation with two explanatory variables and no interaction term has the form: Ŷ = b<sub>0</sub> + b<sub>1</sub>X<sub>1</sub> + b<sub>2</sub>X<sub>2</sub> </li>
-            <li>A least-squares equation with an interaction term has the form: Ŷ = b<sub>0</sub> + b<sub>1</sub>X<sub>1</sub> + b<sub>2</sub>X<sub>2</sub> + b<sub>3</sub>X<sub>1</sub>X<sub>2</sub></li>
-			<br><br>
+	<!-- standard break between title and first part (Part1A) -->
+	<br><br><br>
 		
+		<div class="flex-container">
 			<div class="sectionHeader">Part 2B: Exploring Regression Models</div>
-			<h4>We will use <strong>Settings A</strong> (at left) in the Greenhouse Models app to gain a better visual understanding of more advanced regression models shown above. Check your understanding with the <strong>Exploring Regression Models</strong> questions below.</h4>
-	</div>
+		</div>
+		<h4>We will use <strong>Settings A</strong> (at left) in the Greenhouse Models app to gain a better visual understanding of more advanced regression models shown above. Check your understanding with the <strong>Exploring Regression Models</strong> questions below.</h4>
+	</div> <!--second wrapper-->
 	
 	<div style = "width:20%;float:left;color:Black;font-size: 14px; margin-top: -10%">
 			<div>		
@@ -136,6 +147,10 @@
 				<br>
 			</div>	
 	</div>
+	
+	<!--Standard break before shiney app-->
+	<br>
+	
 	<div style = "width:75%;padding-left:3.5%;float:left;margin-bottom:-20%">
 	  <iframe src = "https://shiny.grinnell.edu/dataspace/greenhouse2/" width="100%" height="1000px" style = "border:none"></iframe>	
   	</div>
@@ -176,11 +191,15 @@
                 </ol>
         </section>
         </div>
-		<br>
+	
+	<!-- standard break between before partsbutton -->
+	<br><br><br>
 	
 	<a href="greenhouse3.html"><div class="partsButton" style="width:50%;margin-left:25%">Continue to Part 3</div></a>
 	
-	<h2>&nbsp;</h2>
+	<!-- standard break between after partsbutton -->
+	<br><br><br>
+	
 <section style = "width:100%; overflow:hidden; color:white;">
 	<hr>
 	<hr>
