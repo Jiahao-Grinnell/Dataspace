@@ -55,46 +55,54 @@
 	</nav>
     </div>
 <body>
-	<div id = "mainwrapper" style = "width:75rem">
-		<div class="blackCover"></div>
-	 	<img src = "images/covidLong.jpg" style = "height:200px; width:100%;display:block;padding-top:100px" alt = "covid">
-		<div class="container">
-        	<div class="overlay" style = "padding-top:150%;padding-left:200%;font-weight:bold;font-size:60px;padding-top:10px; margin-top:-100px;position:absolute">COVID</div>
-   		</div>
+	<div id = "mainwrapper" style = "width:100%">
+		<div class="flex-container">
+			<div class="blackCover"></div>
+	 		<img src = "images/covidLong.jpg" class="topImage" alt = "covid">
+			<div class="overlay">
+        		<div class="topTextModule" style="margin-top:-150px">COVID</div>
+   			</div>
+		</div>
 		<div class="flex-container">
 			<a href="covid1.html"><div class="partsButtonOne" style="background:#418fde">MODULE 1</div></a>
 		</div>
 		<div class="flex-container">
 			<a href="https://drive.google.com/drive/folders/1grDXTeyUgUaD2i9dIYgE9ykQcQ4nrtTN" ><div class="partsButtonOne">HANDOUTS</div></a>
 		</div>
-		<article class = "TitleInfo" style = "width:100%;padding-top:50px">
+		
+		<br><br><br>
+		
+		<article class = "TitleInfo" style = "width:100%;margin-left:-1.8%;">
 			<hr>
 			<h4 class="title">Exploring Racial Disparities in New York City's Stop-and-Frisk Policies</h4>
 			<p class="titleContributors">By Shonda Kuiper. Contributors: Yusen He, Allie Jones, Shreyas Agrawal '24, Bowen Mince '22, Wagih Henawi '22, Adam Solar '22, Ying Long '17, Krit Petrachaianan '17, Zachary Segall '18</p>
 			<hr>
-			<br>
 		</article>
 	</div>	
+	
+	<br><br><br>
 
-	<section id = "rightContent">
-		<aside id="rightcontent" style = "width:100%">		
+	<section id = "rightContent">	
 			<br><br><br><br><br>
-			<h3> <strong style = "font-size: 20px; padding-right: 10px; margin-left:-20%">Key Question:</strong><img src="images/KeyIdea.jpg" width="38" height="28" alt="fun fact icon"/></h3>
-			<h4 style="width:100%;font-size:16px;margin-left:-3%;font-weight:normal">How can models help us make informed decisions about pandemic planning?</h4> </aside>
-		</aside>
+			<h3> <strong>Key Question:</strong><img src="images/KeyIdea.jpg" width="38" height="28" alt="fun fact icon"/></h3>
+			<h4 style="width:100%;font-size:16px;margin-left:-3%;font-weight:normal">How can models help us make informed decisions about pandemic planning?</h4>
 	</section>
 	
 	<div id="second-wrapper">
-			<div class="partsButton" style="width:50%;margin-left:25%">Part 1A: Introduction</div>
-			<br>
+			<div class="flex-container">
+				<div class="sectionHeader">Part 1A: Introduction</div>
+			</div>
 			<h4>Think back to the early days of the COVID-19 pandemic, shortly after a novel coronavirus disease was first identified and reported on December 31, 2019. Within weeks, the virus had spread to dozens of countries, with cases climbing quickly. Hospitals rapidly became <a href="https://www.thelancet.com/journals/lanres/article/PIIS2213-2600(21)00068-0/fulltext">overloaded and short-staffed</a>, ICU beds were full, and healthcare workers were put under an immense mental and physical toll, having to work overtime under psychological distress.</h4>
 			<h4>Numerous government organizations have been turning to epidemiologists to:</h4>
 			<h4>1) Understand and predict how the pandemic will progress, and</h4>
 			<h4>2) Determine which actions to take to prevent the spread of the disease.</h4>
 			<h4>This site will discuss both of these core ideas. While the model shown below is a simplified model, it is very similar to the models used by many government organizations in the early days of the pandemic.</h4>
-			<br><br><br><br>
-		
-			<div class="partsButton" style="width:50%;margin-left:25%">Part 1B: SIR Model</div>
+			
+			<br><br><br>
+			
+			<div class="flex-container">
+				<div class="sectionHeader">Part 1B: SIR Model</div>
+			</div>
 			<h4>Epidemiologists often use SIR models to represent the spread of diseases. This is a compartment-based model, meaning each person in the population is considered to be within one of several compartments. In this model, each person in a population is considered to be either Susceptible (S), Infected (I), or Recovered/Removed (R). This means that at any given time, a person is either:</h4>
 			<ul>
 				<li><strong>Susceptible</strong> to infection, meaning that they have not yet been infected.</li>
@@ -104,11 +112,12 @@
 			<h4>Then, equations are used to determine how people in the population will move from susceptible to infected and from infected to recovered/removed.</h4>
 			<br>
 			<img src="images/covidSIRModel.png" alt="Covid SIR Model" style="width:40%;margin-left:30%">
-			
 			<h4><strong>Figure 1A</strong>: Compartmental SIR models are most common. At any given point in time, each person in the population can be located in exactly one compartment, although they can move between compartments over time.</h4>
 		<br><br><br>
 		
-			<div class="partsButton" style="width:50%;margin-left:25%">Part 1C: Exploring the SIR Model</div>
+			<div class="flex-container">
+				<div class="sectionHeader">Part 1C: Exploring the SIR Model</div>
+			</div>
 			<h4>In any model, we start with <strong>multiple assumptions</strong>:</h4>
 			<ul>
 				<li><strong>Population (N)</strong>: We assume there are a fixed number of people in the population. In the case of COVID-19 modeling done for national governments, the population of interest is likely to be the total population of the country. However, SIR models can also be used to predict the spread of a disease in a smaller closed community, such as people on a cruise ship or in a prison.</li>
@@ -153,8 +162,10 @@
 		<br><br><br>
 	</div>
 			
-	<div id="second-wrapper">
-		<div class="partsButton" style="width:50%;margin-left:25%">Part 1D: How Public Policy Influence Model Assumptions</div> 
+	<div id="third-wrapper">
+		<div class="flex-container">
+			<div class="sectionHeader" style="height:100px">Part 1D: How Public Policy Influence Model Assumptions</div> 
+		</div>
 		<h4>It’s one thing to study a graph, but you can really understand the nuance and complexity of the data when you manipulate it yourself! See if you can use the NYPD Bar Chart App to recreate Figure 1A and Figure 1B on your own. Then modify the graph to answer the questions below.</h4>
 		<h4>Let’s take a closer look at a couple of the parameters in our simple SIR model.</h4>
 		<br>
