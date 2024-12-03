@@ -194,8 +194,8 @@ a {color: black}
 	display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center;
-	margin-top:0%;
 	margin-bottom: 100%;
+	margin-top:0px;
 }
 
 .besides-container {
@@ -584,7 +584,7 @@ a {color: black}
 .funFact{
 	width:100%;
 	font-size:16px;
-	margin-left:0%;
+	margin-left:-3%;
 	font-weight: 400;
 }
 
@@ -721,10 +721,6 @@ article h3 {
 	background-color: rgba(246,246,246,1.00);
 	margin-top: 150px;
 	padding-top: 32px;
-}
-
-#ThirdWrapper{
-	margin-top: 500px;
 }
 
 h2{

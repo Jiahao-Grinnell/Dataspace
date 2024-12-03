@@ -13,8 +13,8 @@
     Header starts here. It contains Logo and 7 navigation links. 
     ****************************************************************************-->
    		<nav>
-	    	<a href = "https://www.grinnell.edu"> <img  src="images/MapLogoBg.png" alt="logo" width = "50" height = "40" style = "padding: 16px"> </a> 
-	   		<a style = "color:white;font-size:25px; padding-top: 16px; font-family:'Oswald';padding-right:550px" href="index.html"> Dataspace by DASIL </a>
+	    <a href = "https://www.grinnell.edu"> <img  src="images/MapLogoBg.png" alt="logo" width = "50" height = "40" style = "padding: 16px"> </a> 
+	   	<a style = "color:white;font-size:25px; padding-top: 16px; font-family:'Oswald';padding-right:550px" href="index.html"> Dataspace by DASIL </a>
 		<div class = "dropdownContainer">
 		<div class = "dropdown">
 	   		<a href="index.html"><button class = "dropbtn" > Home </button></a>
@@ -54,12 +54,14 @@
 	</nav>
     </div>
 <body>
-	<div id = "mainwrapper" style = "width:75rem">
-		<div class="blackCover"></div>
-	 	<img src = "images/brexitLong.jpg" style = "height:200px; width:100%;display:block;padding-top:100px" alt = "psychic">
-		<div class="container">
-        	<div class="overlay" style = "padding-top:150%;padding-left:200%;font-weight:bold;font-size:60px;padding-top:10px; margin-top:-100px;position:absolute">BREXIT</div>
-   		</div>
+	<div id = "mainwrapper" style = "width:100%">
+		<div class="flex-container">
+			<div class="blackCover"></div>
+	 		<img src = "images/brexitLong.jpg" class="topImage">
+			<div class="overlay" style="margin-top:-70px">
+        		<div class="topTextModule">BREXIT</div>
+   			</div>
+		</div>
 		<div class="flex-container">
 			<a  href="brexit1.html"><div class="partsButtonTwo" style="background:#418fde">MODULE 1</div></a>
 			<a  href="brexit2.html"><div class="partsButtonTwo">MODULE 2</div></a>
@@ -67,44 +69,57 @@
 		<div class="flex-container">
 			<a href="https://drive.google.com/drive/folders/1grDXTeyUgUaD2i9dIYgE9ykQcQ4nrtTN"><div class="partsButtonOne" >HANDOUTS</div></a>
 		</div>
-		<article class = "TitleInfo" style = "width:100%;padding-top:50px">
+		
+		<br><br><br>
+		
+		<article class = "TitleInfo" style = "width:100%;margin-left:-1.8%;">
 			<hr>
 			<h1 class="title">Exploring BREXIT attitudes using Anti-Immigrant sentiment</h1>
 			<h4 class="titleContributors">A longitudinal Analysis using Panel Data from the British Election Study</h4>
 			<hr>
-			<br>
 		</article>
 	</div>	
 	
-	<div id="second-wrapper">
-			<div class="partsButton" style="width:50%;margin-left:25%">Part 1A: Introduction</div>
-			<br>
-			<h4>"Brexit"-- the conjoining of two English words, 'Britain' and 'exit', captures the withdrawal process of the United Kingdom (UK) from the European Union (EU). One key feature of this withdrawal process is Article 50 of the Treaty of the European Union signed by all the EU member states upon joining the union. This treaty enables EU member states to negotiate the terms and conditions of withdrawal. On June 23, 2016, the UK held a referendum, and on March 29, 2017, the UK notified the EU of its decision to leave. The UK's withdrawal from the European Union occurred on February 1st 2020, but the withdrawal agreement did not fully materialize until December 31s , 2020. On January 1st 2021, relations between the UK and the EU became dictated by the "Trade and Cooperation Agreement" which carried significant changes and implications for citizens and businesses on both sides of the English channel.</h4>
-			<h4>The British Election Study (BES) is a series of instruments which include the same survey respondents over time and examines the political preferences towards Brexit. These data can also be used cross-sectionally, as it allows for filtering out who has participated in all, some, or just one of the waves. Panel Study Data are particularly useful to measure change over time and within person changes. For the purpose of this analysis, however, these data are used to make assessments of people's political preferences towards Brexit in a longitudinal, cross-sectional manner.</h4>
-			<h4>Brexit preferences are measured as the weighted proportion of individuals surveyed in at least one wave stating their preference to "stay in" or "leave" the EU. Thus, we are able to describe the proportion of individuals and the fluctuations over time regarding the support for Brexit and the future of the UK in relation to the rest of Europe. Five basic exploratory claims are made using the BES data: 1) Support towards Brexit is increased over time in the context of England, remained the same in Wales, and decreased in Scotland; 2) Elder individuals are more likely to support Brexit than younger individuals; 3) Gender differences are consistent over time (males are more likely to support Brexit than female respondents); 4) Political party preferences are strongly associated with pro (or against) Brexit positions, based on (conservative/liberal political leanings and pro/against Scotish independence); and 5) Being married seems to be associated with pro-brexit preferences. Using the interactive tool below and using BES data, we explore these claims.</h4>
-			<br><br><br>
-			<img src="images/brexitImage.jpg" alt="Brexit image" style="width:40%;margin-left:30%">
-			<br><br><br><br>
-			<h4><strong>Brexit and Regional Differences</strong></h4>
-			<h4>As a recent article by the New York Times titled "Scots voted to remain in the EU; and they resent being dictated to by England" showcases regional difference within the U.K. <a href="https://www.nytimes.com/2021/05/08/world/europe/brexit-scotland-independence.html">The New York Times</a> piece further states how a future second referendum (following one in 2014) could result in the disintegration of the United Kingdom as we know it.</h4>
-			<h4>The shiny app below helps visualize the BES data using country as the grouping variable (England, Wales and Scotland). Figures display the proportion of individuals that support Brexit, the figure on the Y axis displays the proportion of support for the option to "Leave" and "stay" over time.</h4>
-			<br><br>
-			<iframe src="https://shiny.grinnell.edu/brexit/" width="1000px" height="800px" style="border: none;margin-left:15%"></iframe>
-		</div>
+	<br><br><br>
 	
 	<div id="second-wrapper">
+		<div class="flex-container">
+			<div class="sectionHeader">Part 1A: Introduction</div>
+		</div>
+		<h4>"Brexit"-- the conjoining of two English words, 'Britain' and 'exit', captures the withdrawal process of the United Kingdom (UK) from the European Union (EU). One key feature of this withdrawal process is Article 50 of the Treaty of the European Union signed by all the EU member states upon joining the union. This treaty enables EU member states to negotiate the terms and conditions of withdrawal. On June 23, 2016, the UK held a referendum, and on March 29, 2017, the UK notified the EU of its decision to leave. The UK's withdrawal from the European Union occurred on February 1st 2020, but the withdrawal agreement did not fully materialize until December 31s , 2020. On January 1st 2021, relations between the UK and the EU became dictated by the "Trade and Cooperation Agreement" which carried significant changes and implications for citizens and businesses on both sides of the English channel.</h4>
+		<h4>The British Election Study (BES) is a series of instruments which include the same survey respondents over time and examines the political preferences towards Brexit. These data can also be used cross-sectionally, as it allows for filtering out who has participated in all, some, or just one of the waves. Panel Study Data are particularly useful to measure change over time and within person changes. For the purpose of this analysis, however, these data are used to make assessments of people's political preferences towards Brexit in a longitudinal, cross-sectional manner.</h4>
+		<h4>Brexit preferences are measured as the weighted proportion of individuals surveyed in at least one wave stating their preference to "stay in" or "leave" the EU. Thus, we are able to describe the proportion of individuals and the fluctuations over time regarding the support for Brexit and the future of the UK in relation to the rest of Europe. Five basic exploratory claims are made using the BES data: 1) Support towards Brexit is increased over time in the context of England, remained the same in Wales, and decreased in Scotland; 2) Elder individuals are more likely to support Brexit than younger individuals; 3) Gender differences are consistent over time (males are more likely to support Brexit than female respondents); 4) Political party preferences are strongly associated with pro (or against) Brexit positions, based on (conservative/liberal political leanings and pro/against Scotish independence); and 5) Being married seems to be associated with pro-brexit preferences. Using the interactive tool below and using BES data, we explore these claims.</h4>
+		
+		<!--regular break-->
+		<br><br>
+		
+		<img src="images/brexitImage.jpg" alt="Brexit image" style="width:40%;margin-left:30%">
+		
+		<!--regular break-->
+		<br><br>
+		
+		<h4><strong>Brexit and Regional Differences</strong></h4>
+		<h4>As a recent article by the New York Times titled "Scots voted to remain in the EU; and they resent being dictated to by England" showcases regional difference within the U.K. <a href="https://www.nytimes.com/2021/05/08/world/europe/brexit-scotland-independence.html">The New York Times</a> piece further states how a future second referendum (following one in 2014) could result in the disintegration of the United Kingdom as we know it.</h4>
+		<h4>The shiny app below helps visualize the BES data using country as the grouping variable (England, Wales and Scotland). Figures display the proportion of individuals that support Brexit, the figure on the Y axis displays the proportion of support for the option to "Leave" and "stay" over time.</h4>
+		<br><br>
+			<iframe src="https://shiny.grinnell.edu/brexit/" width="70%" height="700px" style="border: none;margin-left:15%"></iframe>
+		</div>
+	
+	<div id="third-wrapper">
 			<h4>The figure on top displays the proportion of people who preferred to "stay" versus "leave" in England. Consistently the proportion of "leavers" remained above .50 after the UK notified the EU of its decision to leave. Interestingly the percentage increased considerably after the UK's final withdrawal from the EU. The second figure shows the same results for the country of Scotland. Results mainly showed that the percentage of Scots supporting the option to "stay" (or remain in the EU) was above .60. Only recently has the proportion of "leavers" increased considerably in Scotland. The results in the third figure for the country of Wales shows a convergence of the two positions (especially after the UK notified of its withdrawl from the EU). As in the case of England, Welsh respondents show a higher proportion of leavers compared to stayers. Immediately after final withdrawal of the UK from the EU, the proportion of leavers increased throughout the countries forming the UK. One could conclude that when the deal finally materialized, a significant proportion of respondents embraced the status quo, i.e. staying out of the E.U. In other words, stayers (now rejoiners) have decreased in this new institutional environment.</h4>
 	</div>
 	<br><br>
 	<div class = "discussionSection">
 		<section class = "discussionSubsection" >
-			<iframe src="https://www.stat2games.sites.grinnell.edu/dataspaceForms/brexit1.php" width="100%" height="1000px"></iframe>
+			<iframe src="https://www.stat2games.sites.grinnell.edu/dataspaceForms/brexit1.php" width="100%" height="800px"></iframe>
 		</section>
 	</div>
-	<br><br><br><br>
+	
+	<br><br><br>
 	<a href="brexit2.html"><div class="partsButton" style="width:50%;margin-left:25%">Continue to Part 2</div></a>
 	
-	<h2>&nbsp;</h2>
+	<br><br><br>
+	
 <section style = "width:100%; overflow:hidden; color:white;">
 	<hr>
 	<hr>

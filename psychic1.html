@@ -8,7 +8,7 @@
 <link href="css/Style1.css" rel="stylesheet" type="text/css">
 <link rel="icon" type="image/x-icon" href="images/MapLogo.ico">
 </head>
-			<div id="nav-wrapper"> 
+<div id="nav-wrapper"> 
 	    <!--**************************************************************************
     Header starts here. It contains Logo and 7 navigation links. 
     ****************************************************************************-->
@@ -54,11 +54,14 @@
 	</nav>
     </div>
 <body>
+	
+	
 	<div id = "mainwrapper" style = "width:100%">
 		<div class="flex-container">
 			<div class="blackCover"></div>
-	 		<img src = "images/Psychic.jpg" class="topImage" alt = "psychic">
-			<div class="overlay">
+	 		<img src = "images/Psychic.jpg" class="topImage">
+			<!--margin-top difference from css sheet. Not sure why this adjustment is necessary-->
+			<div class="overlay" style="margin-top:-50px">
 				<div class="topTextModule">PSYCHIC</div>
    			</div>
 		</div>
@@ -118,7 +121,7 @@
 	<section class="gameView">
 		<iframe class="gameFrame" src="https://www.stat2games.sites.grinnell.edu/games/psychic.html"></iframe>
 	</section>
-	<h4 style="font-style:normal"><strong>NOTE</strong>: If you are unable to play the game, either try a different browser or go to the game website directly 	<a href="https://www.stat2games.sites.grinnell.edu/games/psychic.html">here.</a></h4>
+	<h4 style="font-style:normal;width:40%;margin-left:30%"><strong>NOTE</strong>: If you are unable to play the game, either try a different browser or go to the game website directly 	<a href="https://www.stat2games.sites.grinnell.edu/games/psychic.html">here.</a></h4>
 	<hr><br>
 	
 	<div id="fourth-wrapper">
@@ -132,8 +135,7 @@
 	
 	
 <div id = "SecondSectionwrapper" style = "width:100%;height:auto">
-	<div style = "width:30%;float:left;color:Black;font-size: 14px; margin-left: -25%">
-		<div>		
+	<div style = "width:30%;float:left;color:Black;font-size: 14px; margin-left: 0%">	
 		<h4 style="margin-left:10%;font-size:18px;margin-bottom:0px"><strong>Settings A</strong></h4> 
 		
         <li style="padding-left:0px; font-size:14px; margin-left: 30px"><a>Group ID&nbsp; &nbsp;<em><strong>sample1</strong></em></a></li>
@@ -147,11 +149,10 @@
 		<h4 style="margin-left:10%;margin-right:15%;font-style:normal">Whenever you select the models from the panel, you will see statistical output in a form of a histogram. Use it to analyze the data.</h4>		
 		<h4 style="margin-left:10%;margin-right:10%;font-size:14px"><strong>Instructors Note: </strong> Go to <a href="references.html">faculty resources</a> to access student data</h4>
 		</div>	
-	</div>
 		
 	<div style = "width:60%;padding-left:1.5%;float:left">	
-	  <iframe src = "https://shiny.grinnell.edu/psychic1/" width="105%" height="1000px" style = "border:none"></iframe>
-  </div>
+	  <iframe src = "https://shiny.grinnell.edu/psychic1/" width="105%" height="800px" style = "border:none"></iframe>
+  	</div>
 		
 	<div class = "discussionSection">
 		<section class = "discussionSubsection" >
